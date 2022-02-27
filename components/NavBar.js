@@ -13,7 +13,7 @@ const NavBar = () => {
         <Avatar
                   size="xl"
                   mt="2"
-          name="Dan Abrahmov"
+          name="Nameson Gaudel"
           src="https://bit.ly/dan-abramov"
         />
         <Box display="flex" justifyContent="space-between">
