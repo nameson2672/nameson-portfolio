@@ -1,10 +1,11 @@
-{
-    "data":[
+   [
         {
+            "id":1,
+            "slug":"test_slug",
             "title": "title test",
             "desc": "desc test",
-            "image": "image link test",
-            "stactList":[
+            "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+            "stackList":[
               {
                 "title": "NextJS",
                 "id": 1
@@ -19,4 +20,3 @@
             "explain": "test explain"
         }
     ]
-}

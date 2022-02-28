@@ -2,8 +2,12 @@ import React from 'react'
 import Transition from '../../components/Transition';
 import { Text, useColorModeValue, Container } from '@chakra-ui/react';
 import Work from '../../components/Work';
+import workData from '../../lib/worksInfo.json';
 
 const service = () => {
+  console.log(workData);
+  //const workDataConverted = JSON.parse(workData);
+  
   return (
     <Transition>
       <Container minW={["sm", "md", "2xl"]}>
@@ -17,7 +21,9 @@ const service = () => {
         >
           Works
         </Text>
-        <Work />
+        {workData.map((e) => (
+          <Work title={e.title} desc={e.desc} image={e.image} stackList={e.stackList} id={e.id} slug={e.slug}/>
+        ))}
       </Container>
     </Transition>
   );
