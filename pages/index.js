@@ -92,6 +92,13 @@ function Home() {
         >
           Hobby
         </Text>
+        <Text
+          fontSize={"md"}
+          color={useColorModeValue("gray.900", "gray.300")}
+          w={["sm", "md", "lg"]}
+        >
+          Reading Books, Playing Guitar, Music, Photography.
+        </Text>
       </Container>
     </Transition>
   );
