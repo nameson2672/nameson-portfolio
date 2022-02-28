@@ -17,6 +17,7 @@ const NavBar = () => {
             size="xl"
             mt="2"
             name="Nameson Gaudel"
+            cursor={"pointer"}
             src="https://bit.ly/dan-abramov"
           />
         </NextLink>
