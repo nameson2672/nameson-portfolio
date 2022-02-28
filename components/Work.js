@@ -24,7 +24,7 @@ const Work = ({ title, desc, image, stackList, id, slug}) => {
   ];
   return (
     <NextLink href={"/work/"+slug}>
-      <Center py={6} Id={id} cursor="pointer">
+      <Center Id={id} cursor="pointer">
         <Box
           maxW={"345px"}
           w={"full"}

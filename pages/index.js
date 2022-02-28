@@ -41,7 +41,7 @@ function Home() {
             <Button
               variant={"solid"}
               leftIcon={<EmailIcon />}
-              colorScheme={useColorModeValue("blue", "yellow")}
+              colorScheme={useColorModeValue("blue", "cyan")}
               my={"4"}
               mt={"8"}
               _focus="none"
