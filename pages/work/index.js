@@ -1,6 +1,7 @@
 import React from 'react'
 import Transition from '../../components/Transition';
 import { Text, useColorModeValue, Container } from '@chakra-ui/react';
+import Work from '../../components/Work';
 
 const service = () => {
   return (
@@ -16,7 +17,7 @@ const service = () => {
         >
           Works
         </Text>
-        
+        <Work />
       </Container>
     </Transition>
   );
