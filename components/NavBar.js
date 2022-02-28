@@ -1,6 +1,7 @@
 import NextLink from "next/link";
 import { Box, Button, Container, Avatar } from "@chakra-ui/react"
 import ToggleMode from "./ModeSwitch";
+import { DownloadIcon } from "@chakra-ui/icons";
 
 const NavBar = () => {
   return (
@@ -24,20 +25,23 @@ const NavBar = () => {
 
         <Box display="flex" justifyContent="space-between">
           <Box display="flex" justifyContent="flex-start">
-            <NextLink href="/about" passHref scroll={false}>
+            <NextLink href="/" passHref scroll={false}>
               <Button m="2" variant="ghost">
                 About
               </Button>
             </NextLink>
-            <NextLink href="/service" passHref scroll={false}>
+            <NextLink href="/work" passHref scroll={false}>
               <Button m={["1", "2"]} variant="ghost">
-                Service
+                Work
               </Button>
             </NextLink>
 
             <NextLink href="/resume" passHref scroll={false}>
               <Button m={["1", "2"]} variant="ghost">
                 Resume
+                <Box mx={"2"}>
+                  <DownloadIcon  />
+                </Box>
               </Button>
             </NextLink>
 
