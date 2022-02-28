@@ -1,8 +1,9 @@
 import React from 'react'
+import Transition from '../components/Transition'
 
 const resume = () => {
   return (
-    <div>resume</div>
+    <Transition>resume</Transition>
   )
 }
 

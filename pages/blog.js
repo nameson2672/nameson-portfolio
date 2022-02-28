@@ -1,9 +1,8 @@
 import React from 'react'
+import Transition from '../components/Transition'
 
 const blog = () => {
-  return (
-    <div>blog</div>
-  )
+  return <Transition>blog</Transition>;
 }
 
 export default blog

@@ -1,37 +1,21 @@
-import {
-  Fade,
-  ScaleFade,
-  Slide,
-  useDisclosure,
-  SlideFade,
-  Button,
-  Lorem,
-  Box,
-} from "@chakra-ui/react";
+import { Box, Center, Container, Text } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
- import ToggleMode from "../components/ModeSwitch";
+import ToggleMode from "../components/ModeSwitch";
+import Transition from "../components/Transition";
 
-
- function Home() {
- const { isOpen, onToggle } = useDisclosure();
-
- return (
-   <>
-     <Button onClick={onToggle}>Click Me</Button>
-     <ScaleFade initialScale={0.9} in={isOpen}>
-       <Box
-         p="40px"
-         color="white"
-         mt="4"
-         bg="teal.500"
-         rounded="md"
-         shadow="md"
-       >
-         Fade
-       </Box>
-     </ScaleFade>
-   </>
- );
+function Home() {
+  return (
+    <Transition>
+      <Container minW={["sm", "md", "2xl"]}>
+        
+        {/* <Center w={"inherit"} bg={"gray.700"} borderRadius="8" my={"4"}>
+          <Text fontSize="xl" px={"10"} py={"2"}>
+            Hello, I'm a full-stack developer based in Nepal!
+          </Text>
+        </Center> */}
+      </Container>
+    </Transition>
+  );
 }
 
 export default Home;

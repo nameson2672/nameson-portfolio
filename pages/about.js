@@ -1,9 +1,13 @@
 import React from 'react'
+import Transition from '../components/Transition';
+
 
 const about = () => {
   return (
-    <div>About</div>
-  )
+    <Transition>
+      This is transition
+   </Transition>
+  );
 }
 
-export default about
+export default about;

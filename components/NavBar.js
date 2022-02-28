@@ -6,17 +6,21 @@ const NavBar = () => {
   return (
     <>
       <Container
-        maxW="container.lg"
+        maxW={["container.sm", "container.md", "container.lg"]}
         display="flex"
+        flexDirection={["column", "row", "row"]}
         justifyContent="space-between"
         alignItems="center"
       >
-        <Avatar
-          size="xl"
-          mt="2"
-          name="Nameson Gaudel"
-          src="https://bit.ly/dan-abramov"
-        />
+        <NextLink href="/">
+          <Avatar
+            size="xl"
+            mt="2"
+            name="Nameson Gaudel"
+            src="https://bit.ly/dan-abramov"
+          />
+        </NextLink>
+
         <Box display="flex" justifyContent="space-between">
           <Box display="flex" justifyContent="flex-start">
             <NextLink href="/about" passHref scroll={false}>
@@ -25,25 +29,25 @@ const NavBar = () => {
               </Button>
             </NextLink>
             <NextLink href="/service" passHref scroll={false}>
-              <Button m="2" variant="ghost">
+              <Button m={["1", "2"]} variant="ghost">
                 Service
               </Button>
             </NextLink>
 
             <NextLink href="/resume" passHref scroll={false}>
-              <Button m="2" variant="ghost">
+              <Button m={["1", "2"]} variant="ghost">
                 Resume
               </Button>
             </NextLink>
 
             <NextLink href="/blog" passHref scroll={false}>
-              <Button m="2" variant="ghost">
+              <Button m={["1", "2"]} variant="ghost">
                 Blog
               </Button>
             </NextLink>
-          </Box>
-          <Box m="2">
-            <ToggleMode />
+            <Box m={["1", "2"]}>
+              <ToggleMode />
+            </Box>
           </Box>
         </Box>
       </Container>
