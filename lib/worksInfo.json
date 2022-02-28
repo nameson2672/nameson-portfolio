@@ -1,7 +1,7 @@
    [
         {
             "id":1,
-            "slug":"test_slug",
+            "slug":"test_slugss",
             "title": "title test",
             "desc": "desc test",
             "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
@@ -17,11 +17,12 @@
             ],
             "codeLink":"code link on github test",
             "liveLink": "live link test",
-            "explain": "test explain"
+            "explain": "test explain",
+            "motivation": "motivation to code a project"
         },
         {
           "id": 1,
-          "slug": "test_slug",
+          "slug": "test_slugeee",
           "title": "title test",
           "desc": "desc test",
           "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
@@ -37,11 +38,12 @@
           ],
           "codeLink": "code link on github test",
           "liveLink": "live link test",
-          "explain": "test explain"
+          "explain": "test explain",
+          "motivation": "motivation to code a project"
         },
         {
           "id": 1,
-          "slug": "test_slug",
+          "slug": "test_sluggg",
           "title": "title test",
           "desc": "desc test",
           "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
@@ -57,11 +59,12 @@
           ],
           "codeLink": "code link on github test",
           "liveLink": "live link test",
-          "explain": "test explain"
+          "explain": "test explain",
+          "motivation": "motivation to code a project"
         },
         {
           "id": 1,
-          "slug": "test_slug",
+          "slug": "test_slugasd",
           "title": "title test",
           "desc": "desc test",
           "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
@@ -77,6 +80,7 @@
           ],
           "codeLink": "code link on github test",
           "liveLink": "live link test",
-          "explain": "test explain"
+          "explain": "test explain",
+          "motivation": "motivation to code a project"
         }
     ]
