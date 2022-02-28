@@ -91,6 +91,7 @@ const Footer = () => {
           {renderSocial()}
         </Box>
       </Container>
+      <Text my={"8"} color="gray.500">© 2022 Nameson Gaudel. All Rights Reserved.</Text>
     </Container>
   );
 };

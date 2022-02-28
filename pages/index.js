@@ -58,9 +58,40 @@ function Home() {
           my={"2"}
           textDecor={"underline"}
         >
+          Tech Stack
+        </Text>
+        <Text
+          fontSize={"md"}
+          color={useColorModeValue("gray.900", "gray.300")}
+          w={["sm", "md", "lg"]}
+        >
+          Currently, I'm available for freelance work and full time job as a
+          fullstack engineer.The main tech stack I am using are React,
+          Typescript, Next.js, Node.js for frontend and I like to use asp.net
+          core and .NET Framework for backend and learning this technology
+          constantly.I am also familier with AWS services.
+        </Text>
+        <Text
+          fontSize={["2xl", "4xl"]}
+          fontFamily="monospace"
+          fontWeight={"bold"}
+          color={useColorModeValue("black", "white")}
+          my={"2"}
+          textDecor={"underline"}
+        >
           Bio
         </Text>
         <BioList />
+        <Text
+          fontSize={["2xl", "4xl"]}
+          fontFamily="monospace"
+          fontWeight={"bold"}
+          color={useColorModeValue("black", "white")}
+          my={"2"}
+          textDecor={"underline"}
+        >
+          Hobby
+        </Text>
       </Container>
     </Transition>
   );

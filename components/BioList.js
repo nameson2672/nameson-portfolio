@@ -1,12 +1,8 @@
 import {
   Table,
-  Thead,
   Tbody,
-  Tfoot,
   Tr,
-  Th,
   Td,
-  TableCaption,
 } from "@chakra-ui/react";
 
 const BioList = ({ data, text }) => {
@@ -25,7 +21,7 @@ const BioList = ({ data, text }) => {
         },
         {
             date: "2017",
-            desc:"Learn about computer hardware by traning program by Nepal grovenments Vocational and Skill Development Traning Centre "
+            desc:"Learn about computer hardware by traning program conducted by Vocational and Skill Development Traning Centre of Government of Nepal"
       },
         {
             date: "2018 to present",
@@ -40,14 +36,6 @@ const BioList = ({ data, text }) => {
           <Td>{e.date}</Td>
           <Td>{e.desc} </Td>
         </Tr>))}
-          {/* <Tr>
-            <Td>inches</Td>
-            <Td>millimetres </Td>
-          </Tr>
-          <Tr>
-            <Td>feet</Td>
-            <Td>centimetres (cm)</Td>
-          </Tr> */}
         </Tbody>
       </Table>
     </div>
