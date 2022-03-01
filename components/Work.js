@@ -23,16 +23,24 @@ const Work = ({ title, desc, image, stackList, id, slug}) => {
     },
   ];
   return (
-    <NextLink href={"/work/"+slug}>
+    <NextLink href={"/work/" + slug}>
       <Center Id={id} cursor="pointer">
         <Box
           maxW={"345px"}
           w={"full"}
-          bg={useColorModeValue("gray.100", "gray.800")}
-          boxShadow={"2xl"}
+          bg={useColorModeValue("gray.100", "gray.700")}
+          boxShadow={"xl"}
           rounded={"md"}
           p={6}
+          
+          position={"relative"}
           overflow={"hidden"}
+          transition={"ease-in-out"}
+          _hover={{
+            boxShadow:"8xl",
+            transitionDuration:"300ms",
+            transform: "scale(1.05)"
+          }}
         >
           <Box
             h={"210px"}

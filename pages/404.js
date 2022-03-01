@@ -1,8 +1,8 @@
 import React from 'react'
-import Transition from '../../components/Transition'
-import { Container, Text, useColorModeValue } from '@chakra-ui/react'
+import Transition from '../components/Transition';
+import { Container, Text, useColorModeValue } from '@chakra-ui/react';
 
-const blog = () => {
+const FourOfour = () => {
   return (
     <Transition>
       <Container centerContent my={"4"} minW={["sm", "md", "2xl"]}>
@@ -10,10 +10,10 @@ const blog = () => {
           fontSize={["4xl", "6xl"]}
           fontFamily="monospace"
           fontWeight={"extrabold"}
-          color={"green.500"}
+          color={"red.500"}
           my={"2"}
         >
-          Blog are comming soon...
+          404 NOT FOUND
         </Text>
         <iframe
           src="https://giphy.com/embed/MaJSupPjuS336yDzVJ"
@@ -28,4 +28,5 @@ const blog = () => {
   );
 }
 
-export default blog
+
+export default FourOfour;
