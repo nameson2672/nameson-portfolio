@@ -30,9 +30,22 @@ export async function getStaticProps({ params }) {
 
 const RenderWork = ({ slugName }) => {
     const data = slugName[0];
-    return (<Transition>
-      <WorkPages />
-  </Transition>);
+    return (
+      <Transition>
+        <WorkPages
+          title={data.title}
+          desc={data.desc}
+          image={data.image}
+          stackList={data.stackList}
+          id={data.id}
+          slug={data.slug}
+          codeLink={data.codeLink}
+          liveLink={data.liveLink}
+          explain={data.explain}
+          motivation={data.motivation}
+        />
+      </Transition>
+    );
 };
 
 export default RenderWork;

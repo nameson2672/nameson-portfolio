@@ -17,12 +17,24 @@ import {
     ListItem,
   Link
 } from "@chakra-ui/react";
+import TechStackTag from "./TechStackTag";
 
 import { FiGithub, FiActivity } from "react-icons/fi";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdLocalShipping } from "react-icons/md";
 
-export default function WorkPages({ title, desc, image, stackList, id, slug, codeLink, liveLink, explain }) {
+export default function WorkPages({
+  title,
+  desc,
+  image,
+  stackList,
+  id,
+  slug,
+  codeLink,
+  liveLink,
+  explain,
+  motivation,
+}) {
   return (
     <Container maxW={"7xl"}>
       <SimpleGrid
@@ -34,9 +46,7 @@ export default function WorkPages({ title, desc, image, stackList, id, slug, cod
           <Image
             rounded={"md"}
             alt={"product image"}
-            src={
-              "https://images.unsplash.com/photo-1596516109370-29001ec8ec36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODE1MDl8MHwxfGFsbHx8fHx8fHx8fDE2Mzg5MzY2MzE&ixlib=rb-1.2.1&q=80&w=1080"
-            }
+            src={image}
             fit={"cover"}
             align={"center"}
             w={"100%"}
@@ -50,14 +60,14 @@ export default function WorkPages({ title, desc, image, stackList, id, slug, cod
               fontWeight={600}
               fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
             >
-              Automatic Watch
+              {title}
             </Heading>
             <Text
               color={useColorModeValue("gray.900", "gray.400")}
               fontWeight={300}
               fontSize={"2xl"}
             >
-              $350.00 USD
+              <TechStackTag data={stackList} />
             </Text>
           </Box>
 
@@ -71,12 +81,7 @@ export default function WorkPages({ title, desc, image, stackList, id, slug, cod
             }
           >
             <VStack spacing={{ base: 4, sm: 6 }}>
-              <Text fontSize={"lg"}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                aliquid amet at delectus doloribus dolorum expedita hic, ipsum
-                maxime modi nam officiis porro, quae, quisquam quos
-                reprehenderit velit? Natus, totam.
-              </Text>
+              <Text fontSize={"lg"}>{explain}</Text>
             </VStack>
             <Box>
               <Text
@@ -89,12 +94,7 @@ export default function WorkPages({ title, desc, image, stackList, id, slug, cod
                 motivation
               </Text>
 
-              <Text fontSize={"lg"}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                aliquid amet at delectus doloribus dolorum expedita hic, ipsum
-                maxime modi nam officiis porro, quae, quisquam quos
-                reprehenderit velit? Natus, totam.
-              </Text>
+              <Text fontSize={"lg"}>{motivation}</Text>
             </Box>
             <Box>
               <Text
@@ -156,11 +156,6 @@ export default function WorkPages({ title, desc, image, stackList, id, slug, cod
               </Button>
             </Link>
           </Flex>
-
-          <Stack direction="row" alignItems="center" justifyContent={"center"}>
-            <MdLocalShipping />
-            <Text>Support me</Text>
-          </Stack>
         </Stack>
       </SimpleGrid>
     </Container>
