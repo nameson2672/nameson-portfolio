@@ -13,7 +13,7 @@ const FourOfour = () => {
           color={"red.500"}
           my={"2"}
         >
-          404 NOT FOUND
+          404 Page NOT FOUND
         </Text>
         <iframe
           src="https://giphy.com/embed/MaJSupPjuS336yDzVJ"

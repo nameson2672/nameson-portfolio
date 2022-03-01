@@ -86,7 +86,7 @@ const Footer = () => {
         alignItems="space-between"
         mt="10"
       >
-        <Text fontSize="xl">Web Presence</Text>
+        <Text fontSize="xl">Nameson Gaudel</Text>
         <Box display="flex" alignItems="center">
           {renderSocial()}
         </Box>
