@@ -34,6 +34,7 @@ export default function WorkPages({
   liveLink,
   explain,
   motivation,
+  liveStatus,
 }) {
   return (
     <Container maxW={"7xl"}>
@@ -136,25 +137,48 @@ export default function WorkPages({
                 Code
               </Button>
             </Link>
-            <Link href={liveLink} isExternal mx={8}>
-              <Button
-                rounded={"none"}
-                w={"full"}
-                mx={8}
-                target={"_blank"}
-                size={"lg"}
-                rightIcon={<FiActivity />}
-                bg={useColorModeValue("gray.900", "gray.50")}
-                color={useColorModeValue("white", "gray.900")}
-                textTransform={"uppercase"}
-                _hover={{
-                  transform: "translateY(2px)",
-                  boxShadow: "lg",
-                }}
-              >
-                Live
-              </Button>
-            </Link>
+            {liveStatus ? (
+              <Link href={liveLink} isExternal mx={8} isDisabled>
+                <Button
+                  rounded={"none"}
+                  w={"full"}
+                  mx={8}
+                  target={"_blank"}
+                  size={"lg"}
+                  rightIcon={<FiActivity />}
+                  bg={useColorModeValue("gray.900", "gray.50")}
+                  color={useColorModeValue("white", "gray.900")}
+                  textTransform={"uppercase"}
+                  _hover={{
+                    transform: "translateY(2px)",
+                    boxShadow: "lg",
+                  }}
+                >
+                  Live
+                </Button>
+              </Link>
+            ) : (
+              <Link mx={8} isDisabled>
+                <Button
+                  rounded={"none"}
+                  w={"full"}
+                  mx={8}
+                  target={"_blank"}
+                    size={"lg"}
+                    isDisabled
+                  rightIcon={<FiActivity />}
+                  bg={useColorModeValue("gray.900", "gray.50")}
+                  color={useColorModeValue("white", "gray.900")}
+                  textTransform={"uppercase"}
+                  _hover={{
+                    transform: "translateY(2px)",
+                    boxShadow: "lg",
+                  }}
+                >
+                  Live
+                </Button>
+              </Link>
+            )}
           </Flex>
         </Stack>
       </SimpleGrid>

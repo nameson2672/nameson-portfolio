@@ -43,6 +43,7 @@ const RenderWork = ({ slugName }) => {
           liveLink={data.liveLink}
           explain={data.explain}
           motivation={data.motivation}
+          liveStatus={data.liveStatus}
         />
       </Transition>
     );
