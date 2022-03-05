@@ -38,55 +38,43 @@
   },
   {
     "id": 1,
-    "slug": "test_slugeee",
-    "title": "title test",
-    "desc": "desc test",
-    "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+    "slug": "appointment_scheduler",
+    "title": "Appointment Scheduler",
+    "desc": "It is an appointment scheduler app currently configured for Appointment with a doctor and patient and it is in a docker container so can run in any platform which can run docker.",
+    "image": "https://i.ibb.co/vzcgCMH/For-protofilio.jpg",
     "stackList": [
       {
-        "title": "NextJS",
+        "title": "C#",
+        "id": 5
+      },
+      {
+        "title": "ASP.NET MVC",
         "id": 1
       },
       {
-        "title": "React",
+        "title": "SQL server",
         "id": 2
-      }
-    ],
-    "codeLink": "code link on github test",
-    "liveLink": "live link test",
-    "liveStatus": true,
-    "explain": "test explain",
-    "motivation": "motivation to code a project"
-  },
-  {
-    "id": 1,
-    "slug": "test_sluggg",
-    "title": "title test",
-    "desc": "desc test",
-    "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-    "stackList": [
-      {
-        "title": "NextJS",
-        "id": 1
       },
       {
-        "title": "React",
-        "id": 2
+        "title": "Entitity",
+        "id": 3
+      },
+      {
+        "title": "Docker",
+        "id": 4
       }
     ],
-    "codeLink": "code link on github test",
-    "liveLink": "live link test",
-    "liveStatus": true,
-    "explain": "asfsdf asfsd fghj",
-    "motivation": "motivation to code a project"
-  },
-  {
-    "id": 1,
-    "slug": "test_slugasd",
-    "title": "title test",
+    "codeLink": "https://github.com/nameson2672/Appointment-Manager",
+    "liveLink": "Not publish",
     "liveStatus": false,
-    "desc": "desc test",
-    "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+    "explain": "This app uses the dotnet framework MVC pattern and SQL server. The app is dockerized with a Microsoft SQL server in one container and an app in another they are able to exchange information with each other and at build time database is created and set up by the app itself. You need to create a profile to use the app and can get an appointment with any doctor available. If you want to run the app on your local machine make sure you have docker set up in your machine and just clone the app and use the command “docker-compose up —build”."
+  },
+  {
+    "id": 1,
+    "slug": "bloging_site_using_markdown",
+    "title": "Bloging Site Using Markdown",
+    "desc": "This is the bloging site which use markdown.It use Firebase as a backend and Google for user managment it is actually a clone of developer bloging site called DEV",
+    "image": "https://i.ibb.co/vqrC82G/Screenshot-2022-03-05-103825.jpg",
     "stackList": [
       {
         "title": "NextJS",
@@ -95,11 +83,45 @@
       {
         "title": "React",
         "id": 2
+      },
+      {
+        "title": "Firebase",
+        "id": 3
+      },
+      {
+        "id": 5,
+        "title": "GoogleAPI"
+      },
+      {
+        "title": "Markdown",
+        "id": 4
+      }
+    ],
+    "codeLink": "https://github.com/nameson2672/Dev.to-clone",
+    "liveLink": "https://dev-to-clone-woad.vercel.app/",
+    "liveStatus": true,
+    "explain": "This app uses the NextJS backend framework with the firebase backend. The user uses markdown to create a blog and the app uses the pack called “react-markdown” to render the markdown. In this app use the server-side generation and static-site generation provided by the NextJS framework to provide page fast to end-user and revalidate each page after some time. It uses the auth provider provided by Google API to register users. It uses the real-time snapshot feature provided by firebase to provide a live count of like and dislike on the post."
+  },
+  {
+    "id": 1,
+    "slug": "my-portfolio",
+    "title": "My Portfolio Site",
+    "liveStatus": true,
+    "desc": "This is my portfolio site created using NextJS and Chakra Ui where i show case my work and any body can learn about me. And I am also made it so that I can write some blog. So blog are comming soon stay tuned.",
+    "image": "https://i.ibb.co/sWNX68z/Screenshot-2022-03-05-112108.jpg",
+    "stackList": [
+      {
+        "title": "NextJS",
+        "id": 1
+      },
+      {
+        "title": "Chakra UI",
+        "id": 2
       }
     ],
     "codeLink": "code link on github test",
     "liveLink": "live link test",
-    "explain": "test explain",
-    "motivation": "motivation to code a project"
+    "explain": "This is my Portfolio Site built with NextJS and ChakarUI. This site was built to showcase my work and about me. I will be using this site to write a blog and I am thinking of using a markdown blog and use Facebook API to integrate a comment feature where people can comment using their Facebook account. So stay tuned for a blog coming on this site.",
+    "motivation": "The motivation behind creating this site is to show my web presence and the work I am doing in the field. As I’m not an IT student so showing to the potential client and to the company this site will help me make a trust that I know about the field and know how to solve problems."
   }
 ]

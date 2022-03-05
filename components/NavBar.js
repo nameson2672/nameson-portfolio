@@ -19,7 +19,7 @@ const NavBar = () => {
             mt="2"
             name="Nameson Gaudel"
             cursor={"pointer"}
-            src="https://bit.ly/dan-abramov"
+            src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.6435-9/81519016_1398108697065170_3550721498794688512_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=-JNggF6B-pcAX8-6tMY&_nc_ht=scontent.fktm7-1.fna&oh=00_AT9mvecopIGnG_ZcB4_wq_aMQ2b2-yfW8MhYD-mT-YXEkw&oe=62470259"
           />
         </NextLink>
 
@@ -40,7 +40,7 @@ const NavBar = () => {
               <Button m={["1", "2"]} variant="ghost">
                 Resume
                 <Box mx={"2"}>
-                  <DownloadIcon  />
+                  <DownloadIcon />
                 </Box>
               </Button>
             </NextLink>

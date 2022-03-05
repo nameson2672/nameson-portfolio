@@ -50,7 +50,7 @@ export default function WorkPages({
             alt={"product image"}
             src={image}
             fit={"cover"}
-            align={"center"}
+            align={"left"}
             w={"100%"}
             h={{ base: "100%", sm: "400px", lg: "500px" }}
           />
