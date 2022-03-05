@@ -63,13 +63,13 @@ export default function WorkPages({
             >
               {title}
             </Heading>
-            <Text
+            {/* <Text
               color={useColorModeValue("gray.900", "gray.400")}
               fontWeight={300}
               fontSize={"2xl"}
             >
               <TechStackTag data={stackList} />
-            </Text>
+            </Text> */}
           </Box>
 
           <Stack
@@ -109,11 +109,12 @@ export default function WorkPages({
               </Text>
 
               <List spacing={2}>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    Between lugs:
-                  </Text>{" "}
-                  20 mm
+                <ListItem display={"flex"} flexDirection={"column"}>
+                  {stackList.map((e) => (
+                    <Text as={"span"} fontWeight={"bold"}>
+                      {e.title}
+                    </Text>
+                  ))}
                 </ListItem>
               </List>
             </Box>
@@ -164,8 +165,8 @@ export default function WorkPages({
                   w={"full"}
                   mx={8}
                   target={"_blank"}
-                    size={"lg"}
-                    isDisabled
+                  size={"lg"}
+                  isDisabled
                   rightIcon={<FiActivity />}
                   bg={useColorModeValue("gray.900", "gray.50")}
                   color={useColorModeValue("white", "gray.900")}

@@ -43,7 +43,7 @@ const Work = ({ title, desc, image, stackList, id, slug}) => {
           }}
         >
           <Box
-            h={"210px"}
+            h={"260px"}
             bg={"gray.800"}
             mt={-6}
             mx={-6}

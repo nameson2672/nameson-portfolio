@@ -6,7 +6,7 @@ const nextConfig = {
     esmExternals: false,
   },
   images: {
-    domains: ["images.unsplash.com"],
+    domains: ["images.unsplash.com", "i.ibb.co"],
   },
 };
 
