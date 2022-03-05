@@ -1,104 +1,105 @@
-   [
-        {
-            "id":1,
-            "slug":"Minna_Chhop_Single_product_e_commerse",
-            "title": "Single Product E-Commerse Site",
-            "desc": "This is the single product e-commerse site using MERN stack and stripe for payment and google api for male sending and user menagment using google auth provider",
-            "image": "https://i.ibb.co/LQ1VfVm/for-port.jpg",
-            "stackList":[
-              {
-                "title": "React",
-                "id": 1
-              },
-              {
-                "title": "NodeJS",
-                "id": 2
-              },
-              {
-                "title": "ExpressJs",
-                "id": 3
-              },
-              {
-                "title": "Stripe",
-                "id": 4
-              },{
-                "title": "GoogleAPI",
-                "id": 5
-              },{
-                "title": "MongoDB",
-                "id": 6
-              }
-            ],
-            "codeLink":"https://github.com/nameson2672/Minna-Chhop-Single-product-e-commerse",
-            "liveLink": "https://minachhop.herokuapp.com/",
-            "liveStatus":true,
-            "explain": "test explain",
-            "motivation": "motivation to code a project"
-        },
-        {
-          "id": 1,
-          "slug": "test_slugeee",
-          "title": "title test",
-          "desc": "desc test",
-          "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-          "stackList": [
-            {
-              "title": "NextJS",
-              "id": 1
-            },
-            {
-              "title": "React",
-              "id": 2
-            }
-          ],
-          "codeLink": "code link on github test",
-          "liveLink": "live link test",
-          "liveStatus": true,
-          "explain": "test explain",
-          "motivation": "motivation to code a project"
-        },
-        {
-          "id": 1,
-          "slug": "test_sluggg",
-          "title": "title test",
-          "desc": "desc test",
-          "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-          "stackList": [
-            {
-              "title": "NextJS",
-              "id": 1
-            },
-            {
-              "title": "React",
-              "id": 2
-            }
-          ],
-          "codeLink": "code link on github test",
-          "liveLink": "live link test",
-          "liveStatus": true,
-          "explain": "test explain",
-          "motivation": "motivation to code a project"
-        },
-        {
-          "id": 1,
-          "slug": "test_slugasd",
-          "title": "title test",
-          "liveStatus": true,
-          "desc": "desc test",
-          "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
-          "stackList": [
-            {
-              "title": "NextJS",
-              "id": 1
-            },
-            {
-              "title": "React",
-              "id": 2
-            }
-          ],
-          "codeLink": "code link on github test",
-          "liveLink": "live link test",
-          "explain": "test explain",
-          "motivation": "motivation to code a project"
-        }
-    ]
+[
+  {
+    "id": 1,
+    "slug": "Minna_Chhop_Single_product_e_commerse",
+    "title": "Single Product E-Commerse Site",
+    "desc": "This is the single product e-commerse site using MERN stack and stripe for payment and google api for male sending and user menagment using google auth provider",
+    "image": "https://i.ibb.co/LQ1VfVm/for-port.jpg",
+    "stackList": [
+      {
+        "title": "React",
+        "id": 1
+      },
+      {
+        "title": "NodeJS",
+        "id": 2
+      },
+      {
+        "title": "ExpressJs",
+        "id": 3
+      },
+      {
+        "title": "Stripe",
+        "id": 4
+      },
+      {
+        "title": "GoogleAPI",
+        "id": 5
+      },
+      {
+        "title": "MongoDB",
+        "id": 6
+      }
+    ],
+    "codeLink": "https://github.com/nameson2672/Minna-Chhop-Single-product-e-commerse",
+    "liveLink": "https://minachhop.herokuapp.com/",
+    "liveStatus": true,
+    "explain": "This E-commerce app is built with a MERN stack with Stripe for payment process and Google API for user management and sending mail. The purchase process is simple at the first user adds the product to the cart and process the checkout with stripe and they are directed to stripe with the product info the choose and stripe charge their card and stripe inform node backend with stripe hooks whether the charge on card success or failed and if process success mail with info about the address for delivery and the time it takes it to deliver is sent to the user if it fails user are redirected to card fail page with the problem send by stripe."
+  },
+  {
+    "id": 1,
+    "slug": "test_slugeee",
+    "title": "title test",
+    "desc": "desc test",
+    "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+    "stackList": [
+      {
+        "title": "NextJS",
+        "id": 1
+      },
+      {
+        "title": "React",
+        "id": 2
+      }
+    ],
+    "codeLink": "code link on github test",
+    "liveLink": "live link test",
+    "liveStatus": true,
+    "explain": "test explain",
+    "motivation": "motivation to code a project"
+  },
+  {
+    "id": 1,
+    "slug": "test_sluggg",
+    "title": "title test",
+    "desc": "desc test",
+    "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+    "stackList": [
+      {
+        "title": "NextJS",
+        "id": 1
+      },
+      {
+        "title": "React",
+        "id": 2
+      }
+    ],
+    "codeLink": "code link on github test",
+    "liveLink": "live link test",
+    "liveStatus": true,
+    "explain": "asfsdf asfsd fghj",
+    "motivation": "motivation to code a project"
+  },
+  {
+    "id": 1,
+    "slug": "test_slugasd",
+    "title": "title test",
+    "liveStatus": false,
+    "desc": "desc test",
+    "image": "https://images.unsplash.com/photo-1646006027168-fab973768e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+    "stackList": [
+      {
+        "title": "NextJS",
+        "id": 1
+      },
+      {
+        "title": "React",
+        "id": 2
+      }
+    ],
+    "codeLink": "code link on github test",
+    "liveLink": "live link test",
+    "explain": "test explain",
+    "motivation": "motivation to code a project"
+  }
+]

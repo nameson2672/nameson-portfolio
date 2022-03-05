@@ -14,8 +14,9 @@ import {
   useColorModeValue,
   VisuallyHidden,
   List,
-    ListItem,
-  Link
+  ListItem,
+  Link,
+  Center,
 } from "@chakra-ui/react";
 import TechStackTag from "./TechStackTag";
 
@@ -84,19 +85,21 @@ export default function WorkPages({
             <VStack spacing={{ base: 4, sm: 6 }}>
               <Text fontSize={"lg"}>{explain}</Text>
             </VStack>
-            <Box>
-              <Text
-                fontSize={{ base: "16px", lg: "18px" }}
-                color={useColorModeValue("yellow.500", "yellow.300")}
-                fontWeight={"500"}
-                textTransform={"uppercase"}
-                mb={"4"}
-              >
-                motivation
-              </Text>
+            {motivation && (
+              <Box>
+                <Text
+                  fontSize={{ base: "16px", lg: "18px" }}
+                  color={useColorModeValue("yellow.500", "yellow.300")}
+                  fontWeight={"500"}
+                  textTransform={"uppercase"}
+                  mb={"4"}
+                >
+                  motivation
+                </Text>
 
-              <Text fontSize={"lg"}>{motivation}</Text>
-            </Box>
+                <Text fontSize={"lg"}>{motivation}</Text>
+              </Box>
+            )}
             <Box>
               <Text
                 fontSize={{ base: "16px", lg: "18px" }}
@@ -119,12 +122,11 @@ export default function WorkPages({
               </List>
             </Box>
           </Stack>
-          <Flex>
-            <Link mx={8} isExternal href={codeLink}>
+          <Center>
+            <Link isExternal href={codeLink} mx={[4, 8]}>
               <Button
                 rounded={"none"}
                 w={"full"}
-                mx={8}
                 size={"lg"}
                 rightIcon={<FiGithub />}
                 bg={useColorModeValue("gray.900", "gray.50")}
@@ -139,11 +141,10 @@ export default function WorkPages({
               </Button>
             </Link>
             {liveStatus ? (
-              <Link href={liveLink} isExternal mx={8} isDisabled>
+              <Link href={liveLink} isExternal isDisabled>
                 <Button
                   rounded={"none"}
                   w={"full"}
-                  mx={8}
                   target={"_blank"}
                   size={"lg"}
                   rightIcon={<FiActivity />}
@@ -159,11 +160,10 @@ export default function WorkPages({
                 </Button>
               </Link>
             ) : (
-              <Link mx={8} isDisabled>
+              <Link isDisabled mx={[2, 4, 8]}>
                 <Button
                   rounded={"none"}
                   w={"full"}
-                  mx={8}
                   target={"_blank"}
                   size={"lg"}
                   isDisabled
@@ -171,16 +171,13 @@ export default function WorkPages({
                   bg={useColorModeValue("gray.900", "gray.50")}
                   color={useColorModeValue("white", "gray.900")}
                   textTransform={"uppercase"}
-                  _hover={{
-                    transform: "translateY(2px)",
-                    boxShadow: "lg",
-                  }}
+                  
                 >
                   Live
                 </Button>
               </Link>
             )}
-          </Flex>
+          </Center>
         </Stack>
       </SimpleGrid>
     </Container>
