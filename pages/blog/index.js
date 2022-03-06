@@ -1,10 +1,14 @@
-import React from 'react'
-import Transition from '../../components/Transition'
-import { Container, Text, useColorModeValue } from '@chakra-ui/react'
+import React from "react";
+import Transition from "../../components/Transition";
+import { Container, Text, useColorModeValue } from "@chakra-ui/react";
+import Head from "next/head";
 
 const blog = () => {
   return (
     <Transition>
+      <Head>
+        <title>Nameson Gaudel's - Blog</title>
+      </Head>
       <Container centerContent my={"4"} minW={["sm", "md", "2xl"]}>
         <Text
           fontSize={["4xl", "6xl"]}
@@ -26,6 +30,6 @@ const blog = () => {
       </Container>
     </Transition>
   );
-}
+};
 
-export default blog
+export default blog;

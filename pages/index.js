@@ -9,12 +9,15 @@ import {
 import NextLink from "next/link";
 import { EmailIcon } from "@chakra-ui/icons";
 import BioList from "../components/BioList";
-
+import Head from "next/head";
 import Transition from "../components/Transition";
 
 function Home() {
   return (
     <Transition>
+      <Head>
+        <title>Nameson Gaudel's - Homepage</title>
+      </Head>
       <Container minW={["sm", "md", "2xl"]}>
         <Text
           fontSize={["2xl", "4xl"]}

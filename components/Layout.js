@@ -30,7 +30,6 @@ export default function Layout({ children }) {
         <meta property="og:site_name" content="Nameson Gaudel - Homepage" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/card.jpg" />
-        <title>Nameson Gaudel's - Homepage</title>
       </Head>
       <Navbar />
       <main>{children}</main>

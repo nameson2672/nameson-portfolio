@@ -1,15 +1,20 @@
-import React from 'react'
-import Transition from '../../components/Transition';
-import { Text, useColorModeValue, Container, Grid } from '@chakra-ui/react';
-import Work from '../../components/Work';
-import workData from '../../lib/worksInfo.json';
+import React from "react";
+import Transition from "../../components/Transition";
+import { Text, useColorModeValue, Container, Grid } from "@chakra-ui/react";
+import Work from "../../components/Work";
+import workData from "../../lib/worksInfo.json";
+import Head from "next/head";
 
 const service = () => {
   console.log(workData);
   //const workDataConverted = JSON.parse(workData);
-  
+
   return (
     <Transition>
+      <Head>
+        <title>Nameson Gaudel's - Work</title>
+      </Head>
+
       <Container minW={["sm", "md", "2xl"]}>
         <Text
           fontSize={["2xl", "4xl"]}
@@ -44,6 +49,6 @@ const service = () => {
       </Container>
     </Transition>
   );
-}
+};
 
-export default service
+export default service;

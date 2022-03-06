@@ -2,9 +2,9 @@ import React from 'react'
 const { motion } = require("framer-motion");
 
 const variants = {
-  hidden: { opacity: 0, x: 0, y: 20 },
+  hidden: { opacity: 0, x: 0, y: 40 },
   enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: -0, y: 20 },
+  exit: { opacity: 0, x: -0, y: 40 },
 };
 const Transition = ({children}) => {
   return (
@@ -13,7 +13,7 @@ const Transition = ({children}) => {
       animate="enter"
       exit="exit"
       variants={variants}
-      transition={{ duration: 0.4, type: "easeInOut" }}
+      transition={{ duration: 0.5, type: "easeInOut" }}
       style={{ position: "relative" }}
     >
       {children}
