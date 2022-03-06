@@ -7,10 +7,10 @@ import {
 
 const BioList = ({ data, text }) => {
     const bioInfo = [
-        {
-            date: "1999",
-            desc: "Born in Parbat,Nepal"
-        },
+      {
+        date: "1999",
+        desc: "Born in Parbat,Nepal",
+      },
       {
         date: "2015",
         desc: "Passed SLC board exam from RASTRIYA BAL SHIKSHA SADAN SCHOOL",
@@ -18,15 +18,15 @@ const BioList = ({ data, text }) => {
       {
         date: "2017",
         desc: "Passed NEB board exam from Narayan Secondary School",
-        },
-        {
-            date: "2017",
-            desc:"Learn about computer hardware by traning program conducted by Vocational and Skill Development Traning Centre of Government of Nepal"
       },
-        {
-            date: "2018 to present",
-            desc: "Studing BSc Physics"
-      }
+      {
+        date: "2017",
+        desc: "Learn about computer hardware by training program conducted by Vocational and Skill Development Training Centre of Government of Nepal",
+      },
+      {
+        date: "2018 to present",
+        desc: "Studing BSc Physics",
+      },
     ];
   return (
     <div>
