@@ -14,7 +14,7 @@ const NavBar = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <NextLink href="/">
+        <NextLink href="/" passHref>
           <Avatar
             size="xl"
             mt="4"

@@ -49,7 +49,7 @@ const Work = ({ title, desc, image, stackList, id, slug}) => {
             mb={6}
             pos={"relative"}
           >
-            <Image src={image} layout={"fill"} />
+            <Image src={image} layout={"fill"} alt={desc}/>
           </Box>
           <Stack>
             <TechStackTag data={stackList} />

@@ -6,7 +6,6 @@ import workData from "../../lib/worksInfo.json";
 import Head from "next/head";
 
 const service = () => {
-  console.log(workData);
   //const workDataConverted = JSON.parse(workData);
 
   return (
@@ -20,7 +19,8 @@ const service = () => {
           fontSize={["2xl", "4xl"]}
           fontFamily="monospace"
           fontWeight={"bold"}
-          color={useColorModeValue("black", "white")}
+          color={"black"}
+          _dark={{color:"white"}}
           my={"2"}
           textDecor={"underline"}
         >

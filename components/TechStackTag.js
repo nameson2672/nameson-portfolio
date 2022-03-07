@@ -11,7 +11,8 @@ const TechStackTag = ({ data }) => {
           p={"1"}
           m={"1"}
           rounded={"0"}
-          bg={useColorModeValue("blue.500", "cyan.600")}
+          bg={"blue.500"}
+          _dark={{bg:"cyan,600"}}
         >
           {e.title}
         </Tag>

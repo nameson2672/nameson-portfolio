@@ -89,7 +89,8 @@ export default function WorkPages({
               <Box>
                 <Text
                   fontSize={{ base: "16px", lg: "18px" }}
-                  color={useColorModeValue("yellow.500", "yellow.300")}
+                  color= "yellow.500" 
+                  _dark={{ color: "yellow.300" }}
                   fontWeight={"500"}
                   textTransform={"uppercase"}
                   mb={"4"}
@@ -129,8 +130,11 @@ export default function WorkPages({
                 w={"full"}
                 size={"lg"}
                 rightIcon={<FiGithub />}
-                bg={useColorModeValue("gray.900", "gray.50")}
-                color={useColorModeValue("white", "gray.900")}
+                bg="gray.900"
+                color={"gray.50"}
+                _dark={{ bg: "gray.50", color: "gray.900" }}
+                // bg={useColorModeValue("gray.900", "gray.50")}
+                // color={useColorModeValue("white", "gray.900")}
                 textTransform={"uppercase"}
                 _hover={{
                   transform: "translateY(2px)",
@@ -148,8 +152,11 @@ export default function WorkPages({
                   target={"_blank"}
                   size={"lg"}
                   rightIcon={<FiActivity />}
-                  bg={useColorModeValue("gray.900", "gray.50")}
-                  color={useColorModeValue("white", "gray.900")}
+                  bg="gray.900"
+                  color={"gray.50"}
+                  _dark={{ bg: "gray.50", color: "gray.900" }}
+                  // bg={useColorModeValue("gray.900", "gray.50")}
+                  // color={useColorModeValue("white", "gray.900")}
                   textTransform={"uppercase"}
                   _hover={{
                     transform: "translateY(2px)",
@@ -168,10 +175,12 @@ export default function WorkPages({
                   size={"lg"}
                   isDisabled
                   rightIcon={<FiActivity />}
-                  bg={useColorModeValue("gray.900", "gray.50")}
-                  color={useColorModeValue("white", "gray.900")}
+                  bg="gray.900"
+                  color={"gray.50"}
+                  _dark={{ bg: "gray.50", color: "gray.900" }}
+                  // bg={useColorModeValue("gray.900", "gray.50")}
+                  // color={useColorModeValue("white", "gray.900")}
                   textTransform={"uppercase"}
-                  
                 >
                   Live
                 </Button>
