@@ -17,7 +17,7 @@ const blog = () => {
           color={"green.500"}
           my={"2"}
         >
-          Blog are comming soon...
+          Blogs are comming soon...
         </Text>
         <iframe
           src="https://giphy.com/embed/MaJSupPjuS336yDzVJ"

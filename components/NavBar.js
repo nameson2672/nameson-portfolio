@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Box, Button, Container, Avatar } from "@chakra-ui/react";
+import { Box, Button, Container, Avatar, Link } from "@chakra-ui/react";
 import ToggleMode from "./ModeSwitch";
 import { DownloadIcon } from "@chakra-ui/icons";
 
@@ -37,14 +37,17 @@ const NavBar = () => {
               </Button>
             </NextLink>
 
-            <NextLink href="/resume" passHref scroll={false}>
+            <Link
+              href="https://drive.google.com/file/d/1_Fu-tg4ReidkPmZbjNah8WjotISmHJSf/view"
+              isExternal
+            >
               <Button m={["1", "2"]} variant="ghost">
                 Resume
                 <Box mx={"2"}>
                   <DownloadIcon />
                 </Box>
               </Button>
-            </NextLink>
+            </Link>
 
             <NextLink href="/blog" passHref scroll={false}>
               <Button m={["1", "2"]} variant="ghost">
