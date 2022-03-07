@@ -23,8 +23,8 @@ const Work = ({ title, desc, image, stackList, id, slug}) => {
     },
   ];
   return (
-    <NextLink href={"/work/" + slug}>
-      <Center Id={id} cursor="pointer">
+    <NextLink href={"/work/" + slug} passHref>
+      <Center key={id} cursor="pointer">
         <Box
           maxW={"345px"}
           w={"full"}
@@ -32,14 +32,13 @@ const Work = ({ title, desc, image, stackList, id, slug}) => {
           boxShadow={"xl"}
           rounded={"md"}
           p={6}
-          
           position={"relative"}
           overflow={"hidden"}
           transition={"ease-in-out"}
           _hover={{
-            boxShadow:"8xl",
-            transitionDuration:"300ms",
-            transform: "scale(1.05)"
+            boxShadow: "8xl",
+            transitionDuration: "300ms",
+            transform: "scale(1.05)",
           }}
         >
           <Box

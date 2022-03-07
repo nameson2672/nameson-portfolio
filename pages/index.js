@@ -40,7 +40,7 @@ function Home() {
           technology. I am self-taught developer and searching for a job.
         </Text>
         <center>
-          <NextLink href={"mailto:namesongaudel.ng@gmail.com"}>
+          <NextLink href={"mailto:namesongaudel.ng@gmail.com"} passHref>
             <Button
               variant={"solid"}
               leftIcon={<EmailIcon />}

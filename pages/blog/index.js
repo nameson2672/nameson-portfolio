@@ -24,7 +24,7 @@ const blog = () => {
           width="480"
           height="263"
           frameBorder="0"
-          class="giphy-embed"
+          className="giphy-embed"
           allowFullScreen
         ></iframe>
       </Container>

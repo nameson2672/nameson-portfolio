@@ -38,7 +38,7 @@ export default function WorkPages({
   liveStatus,
 }) {
   return (
-    <Container maxW={"7xl"}>
+    <Container maxW={"7xl"} key={id}>
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 10 }}
@@ -114,7 +114,7 @@ export default function WorkPages({
               <List spacing={2}>
                 <ListItem display={"flex"} flexDirection={"column"}>
                   {stackList.map((e) => (
-                    <Text as={"span"} fontWeight={"bold"}>
+                    <Text as={"span"} fontWeight={"bold"} key={e.id}>
                       {e.title}
                     </Text>
                   ))}

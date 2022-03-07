@@ -37,6 +37,7 @@ const RenderWork = ({ slugName }) => {
           <title>Nameson Gaudel&apos;s - {data.slug}</title>
         </Head>
         <WorkPages
+          key={data.id}
           title={data.title}
           desc={data.desc}
           image={data.image}

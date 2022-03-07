@@ -51,24 +51,28 @@ const Footer = () => {
     {
       icon: <FiGithub />,
       link: "https://github.com/nameson2672",
+      id: 1,
     },
     {
       icon: <FiLinkedin />,
       link: "https://www.linkedin.com/in/nameson-gaudel-855541172/",
+      id: 2,
     },
     {
       icon: <FiTwitter />,
       link: "https://twitter.com/NamesonGaudel",
+      id: 3,
     },
     {
       icon: <FiMail />,
       link: "mailto:namesongaudel.ng@gmail.com",
+      id: 4,
     },
   ];
 
   const renderSocial = () => {
     return IconInfo.map((e) => {
-      return <FooterLink link={e.link}>{e.icon}</FooterLink>;
+      return <FooterLink link={e.link} ID={e.id} key={e.id}>{e.icon}</FooterLink>;
     });
   };
 

@@ -42,6 +42,7 @@ const service = () => {
               image={e.image}
               stackList={e.stackList}
               id={e.id}
+              key={e.id}
               slug={e.slug}
             />
           ))}
