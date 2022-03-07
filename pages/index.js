@@ -16,7 +16,7 @@ function Home() {
   return (
     <Transition>
       <Head>
-        <title>Nameson Gaudel's - Homepage</title>
+        <title>Nameson Gaudel&apos;s - Homepage</title>
       </Head>
       <Container minW={["sm", "md", "2xl"]}>
         <Text
@@ -26,7 +26,7 @@ function Home() {
           color={useColorModeValue("black", "white")}
           my={"2"}
         >
-          Hello, I'm Nameson
+          Hello, I&apos;m Nameson
         </Text>
         <Text
           fontSize={"md"}
@@ -68,8 +68,8 @@ function Home() {
           color={useColorModeValue("gray.900", "gray.300")}
           w={["sm", "md", "lg"]}
         >
-          Currently, I'm available for freelance work and full time job as a
-          fullstack engineer.The main tech stack I am using are React,
+          Currently, I&apos;m available for freelance work and full time job as
+          a fullstack engineer.The main tech stack I am using are React,
           Typescript, Next.js, Node.js for frontend and I like to use asp.net
           core and .NET Framework for backend and learning this technology
           constantly.I am also familier with AWS services.

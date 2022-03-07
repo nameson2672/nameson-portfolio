@@ -7,7 +7,7 @@ const blog = () => {
   return (
     <Transition>
       <Head>
-        <title>Nameson Gaudel's - Blog</title>
+        <title>Nameson Gaudel&apos;s - Blog</title>
       </Head>
       <Container centerContent my={"4"} minW={["sm", "md", "2xl"]}>
         <Text

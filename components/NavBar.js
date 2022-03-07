@@ -40,6 +40,7 @@ const NavBar = () => {
             <Link
               href="https://drive.google.com/file/d/1_Fu-tg4ReidkPmZbjNah8WjotISmHJSf/view"
               isExternal
+              passHref
             >
               <Button m={["1", "2"]} variant="ghost">
                 Resume

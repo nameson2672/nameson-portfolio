@@ -6,8 +6,8 @@ import  Head  from 'next/head';
 const FourOfour = () => {
   return (
     <Transition>
-      <Head> 
-          <title>Nameson Gaudel's - 404</title>
+      <Head>
+        <title>Nameson Gaudel&apos;s - 404</title>
       </Head>
       <Container centerContent my={"4"} minW={["sm", "md", "2xl"]}>
         <Text
@@ -24,7 +24,7 @@ const FourOfour = () => {
           width="480"
           height="263"
           frameBorder="0"
-          class="giphy-embed"
+          className="giphy-embed"
           allowFullScreen
         ></iframe>
       </Container>
