@@ -16,7 +16,7 @@ function Home() {
   return (
     <Transition>
       <Head>
-        <title>Nameson Gaudel&apos;s - Homepage</title>
+        <title>Nameson Gaudel - Homepage</title>
       </Head>
       <Container minW={["sm", "md", "2xl"]}>
         <Text
