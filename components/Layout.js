@@ -19,7 +19,10 @@ export default function Layout({ children }) {
     >
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Nameson's homepage" />
+        <meta
+          name="description"
+          content="Fullstack Developer based in Nepal with a passion for building digital services/stuff he want."
+        />
         <meta name="author" content="Nameson Gaudel" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/programming.png" type="image/x-icon" />
@@ -27,6 +30,10 @@ export default function Layout({ children }) {
         <meta name="twitter:site" content="@" />
         <meta name="twitter:creator" content="@NamesonGaudel" />
         <meta name="twitter:image" content="/card.jpg" />
+        <meta
+          name="twitter:description"
+          content="Fullstack Developer based in Nepal"
+        />
         <meta property="og:site_name" content="Nameson Gaudel - Homepage" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/card.jpg" />
