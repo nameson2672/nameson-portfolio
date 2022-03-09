@@ -1,9 +1,11 @@
 // components/layout.js
 const { motion } = require("framer-motion");
 import Head from "next/head";
+
 import { Box, Container } from "@chakra-ui/react";
 import Navbar from "./NavBar";
 import Footer from "./Footer";
+import card from '../public/card.jpg'
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
@@ -29,7 +31,10 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@" />
         <meta name="twitter:creator" content="@NamesonGaudel" />
-        <meta name="twitter:image" content="/card.jpg" />
+        <meta
+          name="twitter:image"
+          content="https://i.ibb.co/dccN2Kw/card.jpg"
+        />
         <meta
           name="twitter:description"
           content="Fullstack Developer based in Nepal"
