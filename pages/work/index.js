@@ -11,7 +11,7 @@ const service = () => {
   return (
     <Transition>
       <Head>
-        <title>Nameson Gaudel&apos;s - Work</title>
+        <title>Nameson Gaudel - Work</title>
       </Head>
 
       <Container minW={["sm", "md", "2xl"]}>

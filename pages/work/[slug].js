@@ -34,7 +34,7 @@ const RenderWork = ({ slugName }) => {
     return (
       <Transition>
         <Head>
-          <title>Nameson Gaudel&apos;s - {data.slug}</title>
+          <title>Nameson Gaudel - {data.slug}</title>
         </Head>
         <WorkPages
           key={data.id}
