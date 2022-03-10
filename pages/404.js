@@ -1,7 +1,7 @@
-import React from 'react'
-import Transition from '../components/Transition';
-import { Container, Text, useColorModeValue } from '@chakra-ui/react';
-import  Head  from 'next/head';
+import React from "react";
+import Transition from "../components/Transition";
+import { Container, Text, Box } from "@chakra-ui/react";
+import Head from "next/head";
 
 const FourOfour = () => {
   return (
@@ -9,9 +9,9 @@ const FourOfour = () => {
       <Head>
         <title>Nameson Gaudel - 404</title>
       </Head>
-      <Container centerContent my={"4"} minW={["sm", "md", "2xl"]}>
+      <Container centerContent my={"4"} maxW={["sm", "md", "2xl"]}>
         <Text
-          fontSize={["4xl", "6xl"]}
+          fontSize={["2xl", "4xl", "6xl"]}
           fontFamily="monospace"
           fontWeight={"extrabold"}
           color={"red.500"}
@@ -19,18 +19,19 @@ const FourOfour = () => {
         >
           404 Page NOT FOUND
         </Text>
-        <iframe
-          src="https://giphy.com/embed/MaJSupPjuS336yDzVJ"
-          width="480"
-          height="263"
-          frameBorder="0"
-          className="giphy-embed"
-          allowFullScreen
-        ></iframe>
+        <Box maxW={["sm", "md", "2xl"]}>
+          <iframe
+            src="https://giphy.com/embed/MaJSupPjuS336yDzVJ"
+            width="300"
+            height="263"
+            frameBorder="0"
+            className="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </Box>
       </Container>
     </Transition>
   );
-}
-
+};
 
 export default FourOfour;

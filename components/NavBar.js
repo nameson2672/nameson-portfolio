@@ -27,7 +27,7 @@ const NavBar = () => {
         <Box display="flex" justifyContent="space-between">
           <Box display="flex" justifyContent="flex-start">
             <NextLink href="/" passHref scroll={false}>
-              <Button m="2" variant="ghost">
+              <Button m={["1", "2"]} variant="ghost">
                 About
               </Button>
             </NextLink>
