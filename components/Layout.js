@@ -5,7 +5,7 @@ import Head from "next/head";
 import { Box, Container } from "@chakra-ui/react";
 import Navbar from "./NavBar";
 import Footer from "./Footer";
-import card from '../public/card.jpg'
+import card from "../public/card.jpg";
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
@@ -18,6 +18,7 @@ export default function Layout({ children }) {
     <Container
       centerContent
       maxW={["container.sm", "container.md", "container.lg"]}
+      px={"1.5"}
     >
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
