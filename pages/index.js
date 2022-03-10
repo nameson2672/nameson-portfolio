@@ -25,6 +25,7 @@ function Home() {
           fontWeight={"extrabold"}
           color={useColorModeValue("black", "white")}
           my={"2"}
+          px={"2"}
         >
           Hello, I&apos;m Nameson
         </Text>
@@ -32,6 +33,7 @@ function Home() {
           fontSize={"md"}
           color={useColorModeValue("gray.900", "gray.300")}
           w={["sm", "md", "lg"]}
+          px={"2"}
         >
           I am a Fullstack Developer based in Nepal with a passion for building
           digital services/stuff I want. This is the place on internet where you
@@ -48,6 +50,7 @@ function Home() {
               my={"4"}
               mt={"8"}
               _focus="none"
+              px={"2"}
             >
               Hire Me
             </Button>
@@ -60,6 +63,7 @@ function Home() {
           color={useColorModeValue("black", "white")}
           my={"2"}
           textDecor={"underline"}
+          px={"2"}
         >
           Tech Stack
         </Text>
@@ -67,6 +71,7 @@ function Home() {
           fontSize={"md"}
           color={useColorModeValue("gray.900", "gray.300")}
           w={["sm", "md", "lg"]}
+          px={"2"}
         >
           Currently, I&apos;m available for freelance work and full time job as
           a fullstack engineer.The main tech stack I am using are React,
@@ -81,6 +86,7 @@ function Home() {
           color={useColorModeValue("black", "white")}
           my={"2"}
           textDecor={"underline"}
+          px={"2"}
         >
           Bio
         </Text>
@@ -92,6 +98,7 @@ function Home() {
           color={useColorModeValue("black", "white")}
           my={"2"}
           textDecor={"underline"}
+          px={"2"}
         >
           Hobby
         </Text>
@@ -100,6 +107,7 @@ function Home() {
           color={useColorModeValue("gray.900", "gray.300")}
           w={["sm", "md", "lg"]}
           mb={"8"}
+          px={"2"}
         >
           Reading Books, Playing Guitar, Music, Photography.
         </Text>

@@ -16,6 +16,7 @@ const blog = () => {
           fontWeight={"extrabold"}
           color={"green.500"}
           my={"2"}
+          px={"2"}
         >
           Blogs are comming soon...
         </Text>
