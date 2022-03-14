@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 // import { AnimatePresence } from "framer-motion";
 const { AnimatePresence } = require("framer-motion");
 import { createBreakpoints } from "@chakra-ui/theme-tools";
+import "../styles/prism-atom-dark.css";
+import "../styles/globle.css";
 
 const breakpoints = createBreakpoints({
   sm: "320px",

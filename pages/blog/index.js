@@ -1,35 +1,54 @@
-import React from "react";
+import { useEffect } from "react";
+import Prism from "prismjs";
+import ReactMarkdown from "react-markdown";
+
+require("prismjs/components/prism-javascript");
+require("prismjs/components/prism-css");
+require("prismjs/components/prism-jsx");
+
 import Transition from "../../components/Transition";
 import { Container, Text, Box } from "@chakra-ui/react";
 import Head from "next/head";
+import fs from "fs";
+import matter from "gray-matter";
+// const data = require("../../lib/blog.md");
+export async function getStaticProps({}) {
+  // params contains the post `id`.
+  // If the route is like /posts/1, then params.id is 1
+  const fileName = "blog.md";
+  const slug = fileName.replace(".md", "");
+  const readFile = fs.readFileSync(`${__dirname}/${fileName}`, "utf-8");
+  console.log(readFile);
+  // const { data: frontmatter } = matter(readFile);
+  // console.log(data);
 
-const blog = () => {
+  // console.log(frontmatter);
+
+  // Pass post data to the page via props
+  return { props: { readFile } };
+}
+const blog = ({ readFile }) => {
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
+  const mark = "";
   return (
     <Transition>
       <Head>
         <title>Nameson Gaudel - Blog</title>
       </Head>
       <Container centerContent my={"4"} maxW={["sm", "md", "2xl"]}>
-        <Text
-          fontSize={["2xl", "4xl", "6xl"]}
-          fontFamily="monospace"
-          fontWeight={"extrabold"}
-          color={"green.500"}
-          my={"2"}
-          px={"2"}
+        <ReactMarkdown
+          style={{
+            border: "solid",
+            borderRadius: 15,
+            marginLeft: 100,
+            marginTop: 50,
+            width: 500,
+          }}
         >
-          Blogs are comming soon...
-        </Text>
-        <Box maxW={["sm", "md", "2xl"]}>
-          <iframe
-            src="https://giphy.com/embed/MaJSupPjuS336yDzVJ"
-            width="300"
-            height="263"
-            frameBorder="0"
-            className="giphy-embed"
-            allowFullScreen
-          ></iframe>
-        </Box>
+          {readFile}
+        </ReactMarkdown>
       </Container>
     </Transition>
   );
