@@ -39,13 +39,6 @@ const blog = ({ readFile }) => {
       </Head>
       <Container centerContent my={"4"} maxW={["sm", "md", "2xl"]}>
         <ReactMarkdown
-          style={{
-            border: "solid",
-            borderRadius: 15,
-            marginLeft: 100,
-            marginTop: 50,
-            width: 500,
-          }}
         >
           {readFile}
         </ReactMarkdown>

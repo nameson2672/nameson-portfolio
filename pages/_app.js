@@ -24,7 +24,8 @@ const theme = extendTheme({
         lineHeight: "tall",
       },
       a: {
-        color: props.colorMode === "dark" ? "teal.300" : "teal.800",
+        color: props.colorMode === "dark" ? "cyan.600" : "blue.600",
+        fontWeight: "bold",
       },
     }),
   },
