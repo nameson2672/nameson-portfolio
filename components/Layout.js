@@ -5,7 +5,7 @@ import Head from "next/head";
 import { Box, Container } from "@chakra-ui/react";
 import Navbar from "./NavBar";
 import Footer from "./Footer";
-import card from "../public/card.jpg";
+
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },

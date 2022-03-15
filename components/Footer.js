@@ -72,7 +72,11 @@ const Footer = () => {
 
   const renderSocial = () => {
     return IconInfo.map((e) => {
-      return <FooterLink link={e.link} ID={e.id} key={e.id}>{e.icon}</FooterLink>;
+      return (
+        <FooterLink link={e.link} ID={e.id} key={e.id}>
+          {e.icon}
+        </FooterLink>
+      );
     });
   };
 
@@ -86,16 +90,21 @@ const Footer = () => {
       <Container
         maxW="container.md"
         display="flex"
-        justifyContent="space-between"
-        alignItems="space-between"
-        mt="10"
+        flexDirection={["column", "row"]}
+        justifyContent={["center", "space-between"]}
+        alignItems={["center", "space-between"]}
+        mt={["5", "10"]}
       >
-        <Text fontSize="xl">Nameson Gaudel</Text>
+        <Text fontSize="xl" centerContent>
+          Nameson Gaudel
+        </Text>
         <Box display="flex" alignItems="center">
           {renderSocial()}
         </Box>
       </Container>
-      <Text my={"8"} color="gray.500">© 2022 Nameson Gaudel. All Rights Reserved.</Text>
+      <Text my={"8"} color="gray.500">
+        © 2022 Nameson Gaudel. All Rights Reserved.
+      </Text>
     </Container>
   );
 };
