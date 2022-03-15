@@ -12,9 +12,9 @@ import Head from "next/head";
 import fs from "fs";
 
 export async function getStaticPaths() {
-  const data = require("../../lib/worksInfo.json");
+  const data = require("../../lib/blog.json");
   // Get the paths we want to pre-render based on posts
-  const paths = data.map((post) => ({
+  const paths = data.data.map((post) => ({
     params: { slug: post.slug },
   }));
 
@@ -23,12 +23,19 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export async function getStaticProps({}) {
-  const fileName = "blog.md";
-  const slug = fileName.replace(".md", "");
-  const readFile = fs.readFileSync(`${__dirname}/${fileName}`, "utf-8");
+export async function getStaticProps({ params }) {
+  const data = require("../../lib/blog.json");
+  const FindOne = (data) => {
+    return data.slug === params.slug;
+  };
+  const [PostInfo] = data.data.filter(FindOne);
+  const fileName = PostInfo.mdFileName;
+  // const slug = fileName.replace(".md", "");
+  const readFile = fs.readFileSync(
+    `${process.cwd()}/Posts/${fileName}.md`,
+    "utf-8"
+  );
 
-    
   return { props: { readFile } };
 }
 
@@ -42,7 +49,7 @@ const blog = ({ readFile }) => {
       <Head>
         <title>Nameson Gaudel - Blog</title>
       </Head>
-      <Container centerContent my={"4"} maxW={["sm", "md", "2xl"]}>
+      <Container my={"4"} maxW={["sm", "md", "2xl"]}>
         <ReactMarkdown>{readFile}</ReactMarkdown>
       </Container>
     </Transition>
