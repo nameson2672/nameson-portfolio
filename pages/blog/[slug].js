@@ -53,7 +53,7 @@ const blog = ({ readFile }) => {
       </Head>
 
       <Container centerContent my={"4"} maxW={["sm", "md", "2xl"]}>
-        <Container maxW={["sm", "md", "2xl"]}>
+        <Container maxW={["25em", "md", "2xl"]}>
           <ReactMarkdown>{readFile}</ReactMarkdown>
         </Container>
       </Container>

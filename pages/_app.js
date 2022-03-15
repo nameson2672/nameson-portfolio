@@ -18,7 +18,7 @@ const theme = extendTheme({
   styles: {
     global: (props) => ({
       "html, body": {
-        fontSize: "md",
+        fontSize: ["sm", "md"],
         background: props.colorMode === "dark" ? "gray.900" : "gray.200",
         color: props.colorMode === "dark" ? "white" : "gray.600",
         lineHeight: "tall",

@@ -8,6 +8,7 @@ const blog = () => {
       <Head>
         <title>Nameson Gaudel - Blog</title>
       </Head>
+      
       <BlogCard />
     </Transition>
   );
