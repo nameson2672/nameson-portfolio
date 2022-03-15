@@ -1,13 +1,6 @@
-import React from "react";
-import {
-  Container,
-  HStack,
-  Tag,
-  useColorModeValue,
-  Flex,
-} from "@chakra-ui/react";
+import { Tag, Flex } from "@chakra-ui/react";
 
-const TechStackTag = ({ data }) => {
+export const BlogTag = ({ data }) => {
   return (
     <Flex wrap={"wrap"}>
       {data.map((e) => (
@@ -20,11 +13,9 @@ const TechStackTag = ({ data }) => {
           bg={"gray.300"}
           _dark={{ bg: "gray.600" }}
         >
-          {e.title}
+          {e.tagName}
         </Tag>
       ))}
     </Flex>
   );
 };
-
-export default TechStackTag;
