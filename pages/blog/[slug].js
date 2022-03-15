@@ -7,7 +7,7 @@ require("prismjs/components/prism-css");
 require("prismjs/components/prism-jsx");
 
 import Transition from "../../components/Transition";
-import { Container, Text, Box } from "@chakra-ui/react";
+import { Container, Box } from "@chakra-ui/react";
 import Head from "next/head";
 import fs from "fs";
 
@@ -40,17 +40,22 @@ export async function getStaticProps({ params }) {
 }
 
 const blog = ({ readFile }) => {
+  let mode;
   useEffect(() => {
     Prism.highlightAll();
   }, []);
+
   const mark = "";
   return (
     <Transition>
       <Head>
         <title>Nameson Gaudel - Blog</title>
       </Head>
-      <Container my={"4"} maxW={["sm", "md", "2xl"]}>
-        <ReactMarkdown>{readFile}</ReactMarkdown>
+
+      <Container centerContent my={"4"} maxW={["sm", "md", "2xl"]}>
+        <Container maxW={["sm", "md", "2xl"]}>
+          <ReactMarkdown>{readFile}</ReactMarkdown>
+        </Container>
       </Container>
     </Transition>
   );

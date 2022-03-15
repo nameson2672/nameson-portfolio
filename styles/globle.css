@@ -1,5 +1,6 @@
 pre {
-  width: 500px;
+  width: inherit;
+  background: rgb(114, 114, 114);
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -10,7 +11,7 @@ code {
 }
 ::-webkit-scrollbar {
   color: aquamarine;
-  height: 20px;              /* height of horizontal scrollbar ← You're missing this */
-  width: 20px;               /* width of vertical scrollbar */
+  height: 20px; /* height of horizontal scrollbar ← You're missing this */
+  width: 20px; /* width of vertical scrollbar */
   border: 0px solid #e95959;
 }
