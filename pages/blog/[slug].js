@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Prism from "prismjs";
 import ReactMarkdown from "react-markdown";
+import HeadInfo from "../../components/HeadInfo";
 
 require("prismjs/components/prism-javascript");
 require("prismjs/components/prism-css");
@@ -36,21 +37,21 @@ export async function getStaticProps({ params }) {
     "utf-8"
   );
 
-  return { props: { readFile } };
+  return { props: { readFile, PostInfo } };
 }
 
-const blog = ({ readFile }) => {
+const blog = ({ readFile, PostInfo }) => {
   let mode;
   useEffect(() => {
     Prism.highlightAll();
   }, []);
-
-  const mark = "";
   return (
     <Transition>
-      <Head>
-        <title>Nameson Gaudel - Blog</title>
-      </Head>
+      <HeadInfo
+        title={PostInfo.titlr}
+        image={PostInfo.CoverImage}
+        desc={PostInfo.shortDesc}
+      />
 
       <Container centerContent my={"4"} maxW={["sm", "md", "2xl"]}>
         <Container maxW={["25em", "md", "2xl"]}>
