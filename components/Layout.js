@@ -19,12 +19,12 @@ export default function Layout({ children }) {
       maxW={["container.sm", "container.md", "container.lg"]}
     >
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
           content="Fullstack Developer based in Nepal with a passion for building digital services/stuff he want."
-        />
-        <meta name="author" content="Nameson Gaudel" />
+        /> */}
+        {/* <meta name="author" content="Nameson Gaudel" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/programming.png" type="image/x-icon" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -40,7 +40,34 @@ export default function Layout({ children }) {
         />
         <meta property="og:site_name" content="Nameson Gaudel - Homepage" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="/card.jpg" /> */}
+        {/* <!-- Primary Meta Tags --> */}
+        <title>Nameson Gaudel - Homepage</title>
+        <meta name="title" content="Nameson Gaudel - Homepage" />
+        <meta
+          name="description"
+          content="Fullstack Developer based in Nepal with a passion for building digital services/stuff he want."
+        />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nameso.com.np/" />
+        <meta property="og:title" content="Nameson Gaudel - Homepage" />
+        <meta
+          property="og:description"
+          content="Fullstack Developer based in Nepal with a passion for building digital services/stuff he want."
+        />
         <meta property="og:image" content="/card.jpg" />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="Nameson Gaudel - Homepage" />
+        <meta
+          property="twitter:description"
+          content="Fullstack Developer based in Nepal with a passion for building digital services/stuff he want."
+        />
+        <meta property="twitter:image" content="/card.jpg"></meta>
       </Head>
       <Navbar />
       <main>{children}</main>
