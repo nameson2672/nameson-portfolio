@@ -8,7 +8,14 @@ require("prismjs/components/prism-css");
 require("prismjs/components/prism-jsx");
 
 import Transition from "../../components/Transition";
-import { Container, Box } from "@chakra-ui/react";
+import {
+  Container,
+  Box,
+  Image,
+  Text,
+  useColorModeValue,
+  Flex,
+} from "@chakra-ui/react";
 import Head from "next/head";
 import fs from "fs";
 
@@ -45,6 +52,8 @@ const blog = ({ readFile, PostInfo }) => {
   useEffect(() => {
     Prism.highlightAll();
   }, []);
+  const wordCount = readFile?.trim().split(/\s+/g).length;
+  const minutesToRead = (wordCount / 100 + 1).toFixed(0);
   return (
     <Transition>
       <HeadInfo
@@ -54,6 +63,22 @@ const blog = ({ readFile, PostInfo }) => {
       />
 
       <Container centerContent my={"4"} maxW={["sm", "md", "2xl"]}>
+        <Text
+          w={"inherit"}
+          align={"center"}
+          fontWeight={"extrabold"}
+          fontSize={["large", "2xl", "4xl"]}
+          color={useColorModeValue("gray.900", "gray.100")}
+        >
+          {PostInfo.title}
+        </Text>
+        <Flex m={"4"} color={useColorModeValue("gray.500", "gray.500")}>
+          <Text mx={["1", "2", "4"]}>- {minutesToRead} min read</Text>
+          <Text>- {PostInfo.publishOn} </Text>
+        </Flex>
+        <Box>
+          <Image alt={PostInfo.title} src={PostInfo.CoverImage} fit={"cover"} />
+        </Box>
         <Container maxW={["25em", "md", "2xl"]}>
           <ReactMarkdown>{readFile}</ReactMarkdown>
         </Container>
