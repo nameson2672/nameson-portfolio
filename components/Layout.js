@@ -51,7 +51,7 @@ export default function Layout({ children }) {
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://nameso.com.np/" />
+        <meta property="og:url" content="https://nameson.com.np/" />
         <meta property="og:title" content="Nameson Gaudel - Homepage" />
         <meta
           property="og:description"
@@ -61,7 +61,7 @@ export default function Layout({ children }) {
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:url" content="https://nameson.com.np/" />
         <meta property="twitter:title" content="Nameson Gaudel - Homepage" />
         <meta
           property="twitter:description"
