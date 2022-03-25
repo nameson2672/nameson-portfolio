@@ -2,6 +2,29 @@
   "data": [
     {
       "index": 1,
+      "slug": "big_o_the_easy_way",
+      "title": "Big O The Easy Way",
+      "shortDesc": "Here I talk about the big o notation and how to find big o of any algorithms",
+      "mdFileName": "big_o_the_easy_way",
+      "CoverImage": "/postImg.jpg",
+      "publishOn":"25 March,2022",
+      "tags": [
+        {
+          "id": 1,
+          "tagName": "BIGO"
+        },
+        {
+          "id": 2,
+          "tagName": "Data Stracture"
+        },
+        {
+          "id": 2,
+          "tagName": "Algorithm"
+        }
+      ]
+    },
+    {
+      "index": 1,
       "slug": "the_slug_for_a_post",
       "title": "How I made Postman Clone using HTML, CSS & JavaScript",
       "shortDesc": "It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed! It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed!",

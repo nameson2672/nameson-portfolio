@@ -79,7 +79,7 @@ const blog = ({ readFile, PostInfo }) => {
         <Box>
           <Image alt={PostInfo.title} src={PostInfo.CoverImage} fit={"cover"} />
         </Box>
-        <Container maxW={["25em", "md", "2xl"]}>
+        <Container maxW={["25em", "md", "2xl"]} className="MarkdownContainer">
           <ReactMarkdown>{readFile}</ReactMarkdown>
         </Container>
       </Container>
