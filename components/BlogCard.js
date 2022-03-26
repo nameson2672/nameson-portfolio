@@ -77,7 +77,7 @@ export default function BlogCard() {
         mx={"auto"}
       >
         {blogData.data.map((cardInfo, index) => (
-          <BlogGridCard {...cardInfo} index={index} />
+          <BlogGridCard {...cardInfo} index={index} key={index} />
         ))}
       </SimpleGrid>
     </Flex>

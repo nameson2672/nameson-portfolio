@@ -145,7 +145,7 @@ export default function WorkPages({
               </Button>
             </Link>
             {liveStatus ? (
-              <Link href={liveLink} isExternal isDisabled>
+              <Link href={liveLink} isExternal>
                 <Button
                   rounded={"none"}
                   w={"full"}

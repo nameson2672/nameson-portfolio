@@ -1,5 +1,3 @@
-# Big O the Easy Way
-
 In Computer Science there are a number of ways to solve a single problem. The collection of code that solves a problem is called an algorithm. So among those algorithms how do you find which one is best to solve that one problem? Here’s another way to think this, you need to go from a city A to B you can take a number of routes available but which one should you choose? The answer is the one that takes the least time and money. It is the same for our algorithm problem we choose that algorithm that takes the least time and less space. 
 
 The time required by an algorithm to run is measured in a different way in CS than in real life. In CS time is mostly refer as Time Complexity. **And the time complexity is defined as the number of steps that the algorithm performs to solve the problem.** And is denoted as **O(n)** where n is the number of steps taken by the algorithm. 
