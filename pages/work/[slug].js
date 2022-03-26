@@ -1,7 +1,7 @@
 import React from 'react'
 import Transition from '../../components/Transition';
 import WorkPages from "../../components/WorkPages";
-import Head from "next/head";
+import HeadInfo from '../../components/HeadInfo';
 
 export async function getStaticPaths() {
     const data = require("../../lib/worksInfo.json");
@@ -33,9 +33,10 @@ const RenderWork = ({ slugName }) => {
     const data = slugName[0];
     return (
       <Transition>
-        <Head>
-          <title>Nameson Gaudel - {data.slug}</title>
-        </Head>
+        <HeadInfo title={data.title}
+        image={data.image}
+        desc={data.desc}
+        url={`/work/${data.slug}`}/>
         <WorkPages
           key={data.id}
           title={data.title}

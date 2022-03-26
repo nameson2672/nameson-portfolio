@@ -1,14 +1,15 @@
 import React from "react";
 import Transition from "../components/Transition";
 import { Container, Text, Box } from "@chakra-ui/react";
-import Head from "next/head";
+import HeadInfo from "../components/HeadInfo";
 
 const FourOfour = () => {
   return (
     <Transition>
-      <Head>
-        <title>Nameson Gaudel - 404</title>
-      </Head>
+      <HeadInfo title={"Nameson Gaudel - 404"}
+        image={"/card.jpg"}
+        desc={"oops....."}
+        url={`/404`}/>
       <Container centerContent my={"4"} maxW={["sm", "md", "2xl"]}>
         <Text
           fontSize={["2xl", "4xl", "6xl"]}
