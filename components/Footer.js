@@ -95,7 +95,7 @@ const Footer = () => {
         alignItems={["center", "space-between"]}
         mt={["5", "10"]}
       >
-        <Text fontSize="xl" centerContent>
+        <Text fontSize="xl">
           Nameson Gaudel
         </Text>
         <Box display="flex" alignItems="center">

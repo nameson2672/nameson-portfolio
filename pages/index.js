@@ -41,7 +41,7 @@ function Home() {
           passion in the field of web development and constantly learning new
           technology. I am self-taught developer and searching for a job.
         </Text>
-        <center>
+        <Center>
           <NextLink href={"mailto:namesongaudel.ng@gmail.com"} passHref>
             <Button
               variant={"solid"}
@@ -55,7 +55,7 @@ function Home() {
               Hire Me
             </Button>
           </NextLink>
-        </center>
+        </Center>
         <Text
           fontSize={["2xl", "4xl"]}
           fontFamily="monospace"
