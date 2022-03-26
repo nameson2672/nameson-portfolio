@@ -57,9 +57,10 @@ const Blog = ({ readFile, PostInfo }) => {
   return (
     <Transition>
       <HeadInfo
-        title={PostInfo.titlr}
+        title={PostInfo.title}
         image={PostInfo.CoverImage}
         desc={PostInfo.shortDesc}
+        url={`blog/${PostInfo.slug}`}
       />
 
       <Container centerContent my={"4"} maxW={["sm", "md", "2xl"]}>

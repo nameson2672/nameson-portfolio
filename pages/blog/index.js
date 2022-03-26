@@ -1,13 +1,14 @@
 import BlogCard from "../../components/BlogCard";
 import Transition from "../../components/Transition";
-import Head from "next/head";
+import HeadInfo from "../../components/HeadInfo";
 
 const blog = () => {
   return (
     <Transition>
-      <Head>
-        <title>Nameson Gaudel - Blog</title>
-      </Head>
+      <HeadInfo title={"Nameson Gaudel - Blog"}
+        image={"/card.jpg"}
+        desc={"Fullstack Developer based in Nepal with a passion for building digital services/stuff he want."}
+        url={`/blog`}/>
       
       <BlogCard />
     </Transition>

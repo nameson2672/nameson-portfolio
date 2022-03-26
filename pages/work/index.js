@@ -3,16 +3,17 @@ import Transition from "../../components/Transition";
 import { Text, useColorModeValue, Container, Grid } from "@chakra-ui/react";
 import Work from "../../components/Work";
 import workData from "../../lib/worksInfo.json";
-import Head from "next/head";
+import HeadInfo from "../../components/HeadInfo";
 
 const service = () => {
   //const workDataConverted = JSON.parse(workData);
 
   return (
     <Transition>
-      <Head>
-        <title>Nameson Gaudel - Work</title>
-      </Head>
+     <HeadInfo title={"Nameson Gaudel - Work"}
+        image={"/card.jpg"}
+        desc={"Project and work I have done"}
+        url={`/work`}/>
 
       <Container maxW={["25em", "md", "2xl"]}>
         <Text

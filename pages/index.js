@@ -11,6 +11,7 @@ import { EmailIcon } from "@chakra-ui/icons";
 import BioList from "../components/BioList";
 import Head from "next/head";
 import Transition from "../components/Transition";
+import HeadInfo from "../components/HeadInfo"
 
 function Home() {
   return (
@@ -18,6 +19,10 @@ function Home() {
       <Head>
         <title>Nameson Gaudel - Homepage</title>
       </Head>
+      <HeadInfo title={"Nameson Gaudel - Homepage"}
+        image={"/card.jpg"}
+        desc={"Fullstack Developer based in Nepal with a passion for building digital services/stuff he want."}
+        url={`/`}/>
       <Container maxW={["25em", "md", "2xl"]}>
         <Text
           fontSize={["2xl", "4xl"]}
