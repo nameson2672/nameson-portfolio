@@ -14,13 +14,13 @@ const service = () => {
         <title>Nameson Gaudel - Work</title>
       </Head>
 
-      <Container minW={["sm", "md", "2xl"]}>
+      <Container maxW={["25em", "md", "2xl"]}>
         <Text
           fontSize={["2xl", "4xl"]}
           fontFamily="monospace"
           fontWeight={"bold"}
           color={"black"}
-          _dark={{color:"white"}}
+          _dark={{ color: "white" }}
           my={"2"}
           textDecor={"underline"}
         >

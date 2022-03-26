@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "index": 100,
+      "slug": "big_o_the_easy_way",
+      "title": "Big O The Easy Way",
+      "shortDesc": "The Big O is about finding the efficiency of an algorithm. And it helps us to know which algorithm performs better and which one is best suited for a job. It is the first thing you need to know to get better at data structure and algorithms. ",
+      "mdFileName": "big_o_the_easy_way",
+      "CoverImage": "/bigoHeroImg.jpg",
+      "publishOn":"25 March,2022",
+      "tags": [
+        {
+          "id": 1,
+          "tagName": "BigO"
+        },
+        {
+          "id": 2,
+          "tagName": "Data Stracture"
+        },
+        {
+          "id": 3,
+          "tagName": "Algorithm"
+        }
+      ]
+    }
+  ]
+}

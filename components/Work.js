@@ -11,7 +11,7 @@ import {
 import TechStackTag from "./TechStackTag";
 import NextLink from "next/link";
 
-const Work = ({ title, desc, image, stackList, id, slug}) => {
+const Work = ({ title, desc, image, stackList, id, slug }) => {
   const TechFortest = [
     {
       title: "NextJS",
@@ -34,10 +34,8 @@ const Work = ({ title, desc, image, stackList, id, slug}) => {
           p={6}
           position={"relative"}
           overflow={"hidden"}
-          transition={"ease-in-out"}
+          transition="0.3s ease-in-out"
           _hover={{
-            boxShadow: "8xl",
-            transitionDuration: "300ms",
             transform: "scale(1.05)",
           }}
         >
@@ -49,7 +47,7 @@ const Work = ({ title, desc, image, stackList, id, slug}) => {
             mb={6}
             pos={"relative"}
           >
-            <Image src={image} layout={"fill"} alt={desc}/>
+            <Image src={image} layout={"fill"} alt={desc} />
           </Box>
           <Stack>
             <TechStackTag data={stackList} />

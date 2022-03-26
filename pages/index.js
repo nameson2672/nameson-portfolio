@@ -18,7 +18,7 @@ function Home() {
       <Head>
         <title>Nameson Gaudel - Homepage</title>
       </Head>
-      <Container minW={["sm", "md", "2xl"]}>
+      <Container maxW={["25em", "md", "2xl"]}>
         <Text
           fontSize={["2xl", "4xl"]}
           fontFamily="monospace"
@@ -32,7 +32,7 @@ function Home() {
         <Text
           fontSize={"md"}
           color={useColorModeValue("gray.900", "gray.300")}
-          w={["sm", "md", "lg"]}
+          // w={["sm", "md", "lg"]}
           px={"2"}
         >
           I am a Fullstack Developer based in Nepal with a passion for building
@@ -41,7 +41,7 @@ function Home() {
           passion in the field of web development and constantly learning new
           technology. I am self-taught developer and searching for a job.
         </Text>
-        <center>
+        <Center>
           <NextLink href={"mailto:namesongaudel.ng@gmail.com"} passHref>
             <Button
               variant={"solid"}
@@ -55,7 +55,7 @@ function Home() {
               Hire Me
             </Button>
           </NextLink>
-        </center>
+        </Center>
         <Text
           fontSize={["2xl", "4xl"]}
           fontFamily="monospace"
@@ -70,7 +70,7 @@ function Home() {
         <Text
           fontSize={"md"}
           color={useColorModeValue("gray.900", "gray.300")}
-          w={["sm", "md", "lg"]}
+          //w={["sm", "md", "lg"]}
           px={"2"}
         >
           Currently, I&apos;m available for freelance work and full time job as
@@ -105,7 +105,7 @@ function Home() {
         <Text
           fontSize={"md"}
           color={useColorModeValue("gray.900", "gray.300")}
-          w={["sm", "md", "lg"]}
+          //w={["sm", "md", "lg"]}
           mb={"8"}
           px={"2"}
         >

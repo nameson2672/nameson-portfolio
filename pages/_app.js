@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 // import { AnimatePresence } from "framer-motion";
 const { AnimatePresence } = require("framer-motion");
 import { createBreakpoints } from "@chakra-ui/theme-tools";
+import "../styles/prism-atom-dark.css";
+import "../styles/globle.css";
 
 const breakpoints = createBreakpoints({
   sm: "320px",
@@ -16,13 +18,14 @@ const theme = extendTheme({
   styles: {
     global: (props) => ({
       "html, body": {
-        fontSize: "sm",
+        fontSize: ["sm", "md"],
         background: props.colorMode === "dark" ? "gray.900" : "gray.200",
         color: props.colorMode === "dark" ? "white" : "gray.600",
         lineHeight: "tall",
       },
       a: {
-        color: props.colorMode === "dark" ? "teal.300" : "teal.800",
+        color: props.colorMode === "dark" ? "cyan.600" : "blue.600",
+        fontWeight: "bold",
       },
     }),
   },

@@ -1,3 +1,33 @@
-body {
+pre {
+  background: rgb(114, 114, 114);
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+code {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-size: 20px;
+}
+.token, .language-jsx{
+  font-size: 20px;
+}
+::-webkit-scrollbar {
+  color: aquamarine;
+  height: 20px; /* height of horizontal scrollbar ← You're missing this */
+  width: 20px; /* width of vertical scrollbar */
+  border: 0px solid #e95959;
+}
+.MarkdownContainer h1{
+  font-size: 30px !important;
+  padding: 10px 0;
+}
+
+.MarkdownContainer p{
+  padding: 10px 0;
+  font-size: 20px;
+}
+.MarkdownContainer h2{
+  font-size: 28px !important;
+  padding: 10px 0;
 }
