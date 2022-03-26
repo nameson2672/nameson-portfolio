@@ -22,25 +22,6 @@
           "tagName": "Algorithm"
         }
       ]
-    },
-    {
-      "index": 101,
-      "slug": "the_slug_for_a_post",
-      "title": "How I made Postman Clone using HTML, CSS & JavaScript",
-      "shortDesc": "It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed! It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed!",
-      "mdFileName": "firstPost",
-      "CoverImage": "/postImg.jpg",
-      "publishOn":"12 March,2022",
-      "tags": [
-        {
-          "id": 1,
-          "tagName": "OpenSourse"
-        },
-        {
-          "id": 2,
-          "tagName": "Github"
-        }
-      ]
     }
   ]
 }

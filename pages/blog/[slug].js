@@ -47,7 +47,7 @@ export async function getStaticProps({ params }) {
   return { props: { readFile, PostInfo } };
 }
 
-const blog = ({ readFile, PostInfo }) => {
+const Blog = ({ readFile, PostInfo }) => {
   let mode;
   useEffect(() => {
     Prism.highlightAll();
@@ -87,4 +87,4 @@ const blog = ({ readFile, PostInfo }) => {
   );
 };
 
-export default blog;
+export default Blog;
