@@ -30,7 +30,7 @@ const NavBar = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <NextLink href="/" passHref>
+        <NextLink href="/" >
           <Avatar
             size="md"
             mt="4"
@@ -43,12 +43,12 @@ const NavBar = () => {
         <Box display="flex" justifyContent="space-between">
           <Box display="flex" justifyContent="flex-start">
             <Box display={["none", "none", "block", "block"]}>
-              <NextLink href="/" passHref scroll={false}>
+              <NextLink href="/"  scroll={false}>
                 <Button m={["1", "2"]} variant="ghost">
                   About
                 </Button>
               </NextLink>
-              <NextLink href="/work" passHref scroll={false}>
+              <NextLink href="/work"  scroll={false}>
                 <Button m={["1", "2"]} variant="ghost">
                   Work
                 </Button>
@@ -57,7 +57,7 @@ const NavBar = () => {
               <Link
                 href="https://drive.google.com/file/d/1_Fu-tg4ReidkPmZbjNah8WjotISmHJSf/view"
                 isExternal
-                passHref
+                
               >
                 <Button m={["1", "2"]} variant="ghost">
                   Resume
@@ -67,7 +67,7 @@ const NavBar = () => {
                 </Button>
               </Link>
 
-              <NextLink href="/blog" passHref scroll={false}>
+              <NextLink href="/blog"  scroll={false}>
                 <Button m={["1", "2"]} variant="ghost">
                   Blog
                 </Button>
@@ -100,12 +100,12 @@ const NavBar = () => {
             />
           </DrawerHeader>
           <DrawerBody display={"flex"} flexDirection={"column"}>
-            <NextLink href="/" passHref scroll={false}>
+            <NextLink href="/"  scroll={false}>
               <Button m={["1", "2"]} variant="ghost" onClick={onClose}>
                 About
               </Button>
             </NextLink>
-            <NextLink href="/work" passHref scroll={false}>
+            <NextLink href="/work"  scroll={false}>
               <Button m={["1", "2"]} variant="ghost" onClick={onClose}>
                 Work
               </Button>
@@ -114,7 +114,7 @@ const NavBar = () => {
             <Link
               href="https://drive.google.com/file/d/1_Fu-tg4ReidkPmZbjNah8WjotISmHJSf/view"
               isExternal
-              passHref
+              
             >
               <Button
                 m={["1", "2"]}
@@ -132,7 +132,7 @@ const NavBar = () => {
               </Button>
             </Link>
 
-            <NextLink href="/blog" passHref scroll={false}>
+            <NextLink href="/blog"  scroll={false}>
               <Button m={["1", "2"]} variant="ghost" onClick={onClose}>
                 Blog
               </Button>
