@@ -55,7 +55,7 @@ const NavBar = () => {
               </NextLink>
 
               <Link
-                href="https://drive.google.com/file/d/1_Fu-tg4ReidkPmZbjNah8WjotISmHJSf/view"
+                href="https://drive.google.com/file/d/1u_IzGgLD0Be65Fe32TND88IyqpNY3oF2/view?usp=sharing"
                 isExternal
                 passHref
               >

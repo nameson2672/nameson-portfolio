@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { EmailIcon } from "@chakra-ui/icons";
-import BioList from "../components/BioList";
+import BioList from "../components/ExperienceList";
 import Head from "next/head";
 import Transition from "../components/Transition";
 import HeadInfo from "../components/HeadInfo"
@@ -32,7 +32,7 @@ function Home() {
           my={"2"}
           px={"2"}
         >
-          Hello, I&apos;m Nameson
+          Hey, I&apos;m Nameson Gaudel
         </Text>
         <Text
           fontSize={"md"}
@@ -40,11 +40,7 @@ function Home() {
           // w={["sm", "md", "lg"]}
           px={"2"}
         >
-          I am a Fullstack Developer based in Nepal with a passion for building
-          digital services/stuff I want. This is the place on internet where you
-          can find about me and the project I am dowing and worked on.I have a
-          passion in the field of web development and constantly learning new
-          technology. I am self-taught developer and searching for a job.
+          Toronto-based Fullstack Developer with a passion for crafting digital solutions. Specializing in web development, my expertise spans cloud and backend technologies. Armed with a physics bachelor&apos;s degree, I thrive as a problem solver. As a self-taught developer, I am actively seeking new opportunities to apply and expand my skills in innovative projects.
         </Text>
         <Center>
           <NextLink href={"mailto:namesongaudel.ng@gmail.com"} passHref>
@@ -67,7 +63,6 @@ function Home() {
           fontWeight={"bold"}
           color={useColorModeValue("black", "white")}
           my={"2"}
-          textDecor={"underline"}
           px={"2"}
         >
           Tech Stack
@@ -78,31 +73,25 @@ function Home() {
           //w={["sm", "md", "lg"]}
           px={"2"}
         >
-          Currently, I&apos;m available for freelance work and full time job as
-          a fullstack engineer.The main tech stack I am using are React,
-          Typescript, Next.js, Node.js for frontend and I like to use asp.net
-          core and .NET Framework for backend and learning this technology
-          constantly.I am also familier with AWS services.
+          I&apos;m a confident and passionate Fullstack Developer based in Toronto. Specializing in web development, my tech stack includes React, TypeScript, Next.js, and Node.js for the frontend, while I use ASP.NET Core and .NET Framework for backend development. With a background in physics, I bring a problem-solving mindset to my work. I am actively seeking new opportunities for freelance and full-time positions, leveraging my skills in AWS. Let's create something amazing together!
         </Text>
-        <Text
+        {/* <Text
           fontSize={["2xl", "4xl"]}
           fontFamily="monospace"
           fontWeight={"bold"}
           color={useColorModeValue("black", "white")}
-          my={"2"}
-          textDecor={"underline"}
+          my={"4"}
           px={"2"}
         >
-          Bio
+          Work Experience  
         </Text>
-        <BioList />
+        <BioList /> */}
         <Text
           fontSize={["2xl", "4xl"]}
           fontFamily="monospace"
           fontWeight={"bold"}
           color={useColorModeValue("black", "white")}
-          my={"2"}
-          textDecor={"underline"}
+          my={"4"}
           px={"2"}
         >
           Hobby
@@ -114,7 +103,7 @@ function Home() {
           mb={"8"}
           px={"2"}
         >
-          Reading Books, Playing Guitar, Music, Photography.
+          📚Reading Books, 🎸Playing Guitar, 🎶Music, 📷Photography.
         </Text>
       </Container>
     </Transition>

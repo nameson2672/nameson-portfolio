@@ -59,11 +59,6 @@ const Footer = () => {
       id: 2,
     },
     {
-      icon: <FiTwitter />,
-      link: "https://twitter.com/NamesonGaudel",
-      id: 3,
-    },
-    {
       icon: <FiMail />,
       link: "mailto:namesongaudel.ng@gmail.com",
       id: 4,
