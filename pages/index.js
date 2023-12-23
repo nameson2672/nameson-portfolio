@@ -73,7 +73,7 @@ function Home() {
           //w={["sm", "md", "lg"]}
           px={"2"}
         >
-          I&apos;m a confident and passionate Fullstack Developer based in Toronto. Specializing in web development, my tech stack includes React, TypeScript, Next.js, and Node.js for the frontend, while I use ASP.NET Core and .NET Framework for backend development. With a background in physics, I bring a problem-solving mindset to my work. I am actively seeking new opportunities for freelance and full-time positions, leveraging my skills in AWS. Let's create something amazing together!
+          I&apos;m a confident and passionate Fullstack Developer based in Toronto. Specializing in web development, my tech stack includes React, TypeScript, Next.js, and Node.js for the frontend, while I use ASP.NET Core and .NET Framework for backend development. With a background in physics, I bring a problem-solving mindset to my work. I am actively seeking new opportunities for freelance and full-time positions, leveraging my skills in AWS. Let&apos;s create something amazing together!
         </Text>
         {/* <Text
           fontSize={["2xl", "4xl"]}
