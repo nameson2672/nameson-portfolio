@@ -1,0 +1,66 @@
+{
+  "books": [
+    {
+      "id": "ddia",
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "status": "finished",
+      "rating": 5,
+      "color": "#3D6E8A",
+      "note": "The best systems book I've read. Every chapter reframes how you think about data at scale. Kleppmann has a rare gift for making distributed systems feel intuitive.",
+      "finishedDate": "2025-11"
+    },
+    {
+      "id": "pragmatic-programmer",
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt & David Thomas",
+      "status": "reading",
+      "rating": null,
+      "color": "#C4622D",
+      "note": "Timeless advice on the craft of software. Every tip feels hard-won.",
+      "finishedDate": null
+    },
+    {
+      "id": "sicp",
+      "title": "Structure and Interpretation of Computer Programs",
+      "author": "Harold Abelson & Gerald Jay Sussman",
+      "status": "queued",
+      "rating": null,
+      "color": "#5C6B3A",
+      "note": null,
+      "finishedDate": null
+    }
+  ],
+  "papers": [
+    {
+      "id": "mapreduce",
+      "title": "MapReduce: Simplified Data Processing on Large Clusters",
+      "authors": "Jeffrey Dean, Sanjay Ghemawat",
+      "organization": "Google",
+      "year": 2004,
+      "tags": ["systems", "distributed"],
+      "note": "The paper that made parallelism feel obvious in hindsight. The genius is in what it leaves out — the programming model is deliberately constrained to make automatic parallelization tractable.",
+      "url": "https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/"
+    },
+    {
+      "id": "dynamo",
+      "title": "Dynamo: Amazon's Highly Available Key-Value Store",
+      "authors": "Giuseppe DeCandia et al.",
+      "organization": "Amazon",
+      "year": 2007,
+      "tags": ["storage", "distributed"],
+      "note": "A masterclass in pragmatic distributed systems design. The explicit trade-off of consistency for availability shaped how I think about SLA-driven architecture decisions.",
+      "url": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf"
+    },
+    {
+      "id": "raft",
+      "title": "In Search of an Understandable Consensus Algorithm",
+      "authors": "Diego Ongaro, John Ousterhout",
+      "organization": "Stanford University",
+      "year": 2014,
+      "tags": ["consensus", "distributed"],
+      "note": "Raft is designed for understandability, and it delivers. After reading this, Paxos finally clicked too — sometimes the best way to understand something is to see a cleaner alternative.",
+      "url": "https://raft.github.io/raft.pdf"
+    }
+  ]
+}

@@ -1,65 +1,180 @@
-import Image from "next/image";
+import Link from 'next/link'
+import { getAllPosts } from '@/lib/posts'
+import { getBooks, getPapers } from '@/lib/content'
+import { PostListItem } from '@/components/post-list-item'
+import { PaperListItem } from '@/components/paper-list-item'
+import { NewsletterCta } from '@/components/newsletter-cta'
 
-export default function Home() {
+export const dynamic = 'force-static'
+
+export default async function HomePage() {
+  const [posts, papers] = await Promise.all([getAllPosts(), Promise.resolve(getPapers())])
+  const books = getBooks()
+  const recentPosts = posts.slice(0, 4)
+  const recentPapers = papers.slice(0, 3)
+  const readingBooks = books.filter((b) => b.status === 'reading')
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="max-w-[640px] mx-auto px-6">
+      {/* Hero */}
+      <section className="pt-16 pb-12">
+        <p className="text-xs tracking-widest uppercase mb-4" style={{ color: '#9B7B4D' }}>
+          Software Engineer · Builder · Writer
+        </p>
+        <h1 className="text-4xl font-medium leading-tight mb-6" style={{ color: '#1C1C1A' }}>
+          Hey, I&apos;m Nameson —<br />
+          I build things and write about them.
+        </h1>
+        <p className="leading-relaxed" style={{ color: '#6B6860' }}>
+          I&apos;m a software engineer focused on distributed systems and backend infrastructure.
+          Currently building at{' '}
+          <a
+            href="https://github.com/nameson2672"
+            className="transition-colors"
+            style={{
+              color: '#C4622D',
+              borderBottom: '1px solid rgba(196,98,45,0.30)',
+            }}
+          >
+            my own projects
+          </a>
+          . I write about systems design, engineering trade-offs, and the books and papers that
+          shape how I think.{' '}
+          <a
+            href="https://github.com/nameson2672"
+            className="transition-colors"
+            style={{
+              color: '#C4622D',
+              borderBottom: '1px solid rgba(196,98,45,0.30)',
+            }}
+          >
+            GitHub
+          </a>
+          .
+        </p>
+        <div className="flex flex-wrap gap-2 mt-8">
+          <a
+            href="https://github.com/nameson2672"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs px-3 py-1.5 rounded-full transition-colors"
+            style={{ border: '1px solid rgba(28,28,26,0.10)', color: '#6B6860' }}
+          >
+            GitHub
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs px-3 py-1.5 rounded-full transition-colors"
+            style={{ border: '1px solid rgba(28,28,26,0.10)', color: '#6B6860' }}
+          >
+            Twitter
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs px-3 py-1.5 rounded-full transition-colors"
+            style={{ border: '1px solid rgba(28,28,26,0.10)', color: '#6B6860' }}
+          >
+            LinkedIn
+          </a>
+        </div>
+      </section>
+
+      {/* Recent Writing */}
+      <section>
+        <div className="flex justify-between items-center mb-4">
+          <p className="text-xs tracking-widest uppercase" style={{ color: '#9B7B4D' }}>
+            Recent writing
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/writing"
+            className="text-sm transition-colors"
+            style={{ color: '#C4622D' }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            All posts →
+          </Link>
         </div>
-      </main>
+        {recentPosts.map((post) => (
+          <PostListItem key={post.slug} post={post} />
+        ))}
+      </section>
+
+      <div className="my-10" style={{ borderTop: '1px solid rgba(28,28,26,0.10)' }} />
+
+      {/* Currently Reading */}
+      <section>
+        <div className="flex justify-between items-center mb-4">
+          <p className="text-xs tracking-widest uppercase" style={{ color: '#9B7B4D' }}>
+            Currently reading
+          </p>
+          <Link
+            href="/bookshelf"
+            className="text-sm transition-colors"
+            style={{ color: '#C4622D' }}
+          >
+            Full bookshelf →
+          </Link>
+        </div>
+        <div className="grid grid-cols-2 gap-4">
+          {readingBooks.map((book) => (
+            <div
+              key={book.id}
+              className="rounded-xl p-4 flex gap-3"
+              style={{
+                backgroundColor: '#EDE8DF',
+                borderLeft: `4px solid ${book.color}`,
+              }}
+            >
+              <div className="flex-1 min-w-0">
+                <h3 className="text-sm font-medium leading-snug" style={{ color: '#1C1C1A' }}>
+                  {book.title}
+                </h3>
+                <p className="text-xs mt-1" style={{ color: '#6B6860' }}>
+                  {book.author}
+                </p>
+                <div className="flex items-center gap-1.5 mt-2">
+                  <div
+                    className="w-1.5 h-1.5 rounded-full"
+                    style={{ backgroundColor: '#C4622D' }}
+                  />
+                  <span className="text-xs" style={{ color: '#9B9790' }}>
+                    In progress
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="my-10" style={{ borderTop: '1px solid rgba(28,28,26,0.10)' }} />
+
+      {/* Recent Papers */}
+      <section>
+        <div className="flex justify-between items-center mb-4">
+          <p className="text-xs tracking-widest uppercase" style={{ color: '#9B7B4D' }}>
+            Recent papers
+          </p>
+          <Link
+            href="/papers"
+            className="text-sm transition-colors"
+            style={{ color: '#C4622D' }}
+          >
+            All papers →
+          </Link>
+        </div>
+        {recentPapers.map((paper) => (
+          <PaperListItem key={paper.id} paper={paper} showNote={false} />
+        ))}
+      </section>
+
+      {/* Newsletter */}
+      <NewsletterCta />
+
+      <div className="pb-16" />
     </div>
-  );
+  )
 }

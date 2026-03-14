@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv /Users/namesongaudel/dev/nameson-portfolio/README.md /tmp/README-backup.md)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=no --import-alias=\"@/*\" --yes)",
+      "Bash(mv /Users/namesongaudel/dev/nameson-portfolio/.claude /tmp/claude-backup2)"
+    ]
+  }
+}
