@@ -9,6 +9,7 @@ export interface Book {
   color: string
   note: string | null
   finishedDate: string | null
+  buyUrl: string
 }
 
 export interface Paper {

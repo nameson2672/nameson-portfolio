@@ -1,37 +1,72 @@
 {
   "books": [
     {
-      "id": "ddia",
+      "id": "designing-data-intensive-applications",
       "title": "Designing Data-Intensive Applications",
       "author": "Martin Kleppmann",
       "status": "finished",
       "rating": 5,
       "color": "#3D6E8A",
-      "note": "The best systems book I've read. Every chapter reframes how you think about data at scale. Kleppmann has a rare gift for making distributed systems feel intuitive.",
-      "finishedDate": "2025-11"
+      "note": "The definitive book on distributed systems and data engineering. Changed how I think about databases, replication, and consistency.",
+      "finishedDate": "2024-08",
+      "buyUrl": "https://www.amazon.com/dp/1449373321"
     },
     {
-      "id": "pragmatic-programmer",
-      "title": "The Pragmatic Programmer",
-      "author": "Andrew Hunt & David Thomas",
+      "id": "cloud-native-patterns",
+      "title": "Cloud Native Patterns",
+      "author": "Cornelia Davis",
+      "status": "finished",
+      "rating": 4,
+      "color": "#5C6B3A",
+      "note": "Practical patterns for building resilient cloud-native services. Directly applicable to microservices work on AWS.",
+      "finishedDate": "2024-05",
+      "buyUrl": "https://www.amazon.com/dp/1617294209"
+    },
+    {
+      "id": "kubernetes-in-action",
+      "title": "Kubernetes in Action",
+      "author": "Marko Luksa",
+      "status": "finished",
+      "rating": 5,
+      "color": "#2D6A4F",
+      "note": "Essential reading for the CKA. Goes deep on pods, services, and cluster internals in a way that actually sticks.",
+      "finishedDate": "2023-12",
+      "buyUrl": "https://www.amazon.com/dp/1617293725"
+    },
+    {
+      "id": "clean-architecture",
+      "title": "Clean Architecture",
+      "author": "Robert C. Martin",
       "status": "reading",
       "rating": null,
       "color": "#C4622D",
-      "note": "Timeless advice on the craft of software. Every tip feels hard-won.",
-      "finishedDate": null
+      "note": "Revisiting this with fresh eyes after working with DDD in production. A lot more hits now.",
+      "finishedDate": null,
+      "buyUrl": "https://www.amazon.com/dp/0134494164"
     },
     {
-      "id": "sicp",
-      "title": "Structure and Interpretation of Computer Programs",
-      "author": "Harold Abelson & Gerald Jay Sussman",
+      "id": "the-devops-handbook",
+      "title": "The DevOps Handbook",
+      "author": "Gene Kim et al.",
       "status": "queued",
       "rating": null,
-      "color": "#5C6B3A",
+      "color": "#6B4E71",
       "note": null,
-      "finishedDate": null
+      "finishedDate": null,
+      "buyUrl": "https://www.amazon.com/dp/1950508404"
     }
   ],
   "papers": [
+    {
+      "id": "dynamo",
+      "title": "Dynamo: Amazon's Highly Available Key-value Store",
+      "authors": "DeCandia et al.",
+      "organization": "Amazon",
+      "year": 2007,
+      "tags": ["systems", "distributed", "storage"],
+      "note": "The paper behind DynamoDB. Explains consistent hashing, vector clocks, and eventual consistency better than any textbook I've found.",
+      "url": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf"
+    },
     {
       "id": "mapreduce",
       "title": "MapReduce: Simplified Data Processing on Large Clusters",
@@ -39,28 +74,28 @@
       "organization": "Google",
       "year": 2004,
       "tags": ["systems", "distributed"],
-      "note": "The paper that made parallelism feel obvious in hindsight. The genius is in what it leaves out — the programming model is deliberately constrained to make automatic parallelization tractable.",
+      "note": "The paper that made large-scale parallelism feel tractable. Fundamental reading for anyone working with cloud-scale data pipelines.",
       "url": "https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/"
     },
     {
-      "id": "dynamo",
-      "title": "Dynamo: Amazon's Highly Available Key-Value Store",
-      "authors": "Giuseppe DeCandia et al.",
-      "organization": "Amazon",
-      "year": 2007,
-      "tags": ["storage", "distributed"],
-      "note": "A masterclass in pragmatic distributed systems design. The explicit trade-off of consistency for availability shaped how I think about SLA-driven architecture decisions.",
-      "url": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf"
-    },
-    {
       "id": "raft",
-      "title": "In Search of an Understandable Consensus Algorithm",
+      "title": "In Search of an Understandable Consensus Algorithm (Raft)",
       "authors": "Diego Ongaro, John Ousterhout",
-      "organization": "Stanford University",
+      "organization": "Stanford",
       "year": 2014,
       "tags": ["consensus", "distributed"],
-      "note": "Raft is designed for understandability, and it delivers. After reading this, Paxos finally clicked too — sometimes the best way to understand something is to see a cleaner alternative.",
+      "note": "Required reading after getting my CKA. Understanding Raft made etcd and Kubernetes leader election finally click.",
       "url": "https://raft.github.io/raft.pdf"
+    },
+    {
+      "id": "aws-lambda",
+      "title": "Serverless Computing: One Step Forward, Two Steps Back",
+      "authors": "Hellerstein et al.",
+      "organization": "UC Berkeley",
+      "year": 2018,
+      "tags": ["serverless", "systems"],
+      "note": "A balanced critique of the serverless model. Made me think harder about when Lambda is the right tool and when it isn't.",
+      "url": "http://cidrdb.org/cidr2019/papers/p119-hellerstein-cidr19.pdf"
     }
   ]
 }

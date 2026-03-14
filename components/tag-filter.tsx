@@ -28,7 +28,7 @@ export function PostTagFilter({ posts, allTags }: PostTagFilterProps) {
       <div className="flex flex-wrap gap-2 mb-8">
         <button
           onClick={() => setActiveTag(null)}
-          className="text-xs px-3 py-1 rounded-full transition-colors"
+          className="text-xs px-3 py-1 rounded-full transition-colors cursor-pointer select-none"
           style={
             activeTag === null
               ? { backgroundColor: '#C4622D', color: '#fff', border: '1px solid #C4622D' }
@@ -38,6 +38,16 @@ export function PostTagFilter({ posts, allTags }: PostTagFilterProps) {
                   backgroundColor: 'transparent',
                 }
           }
+          onMouseEnter={(e) => {
+            if (activeTag !== null) {
+              e.currentTarget.style.backgroundColor = '#EDE8DF'
+            }
+          }}
+          onMouseLeave={(e) => {
+            if (activeTag !== null) {
+              e.currentTarget.style.backgroundColor = 'transparent'
+            }
+          }}
         >
           All
         </button>
@@ -45,7 +55,7 @@ export function PostTagFilter({ posts, allTags }: PostTagFilterProps) {
           <button
             key={tag}
             onClick={() => setActiveTag(tag === activeTag ? null : tag)}
-            className="text-xs px-3 py-1 rounded-full transition-colors"
+            className="text-xs px-3 py-1 rounded-full transition-colors cursor-pointer select-none"
             style={
               activeTag === tag
                 ? { backgroundColor: '#C4622D', color: '#fff', border: '1px solid #C4622D' }
@@ -55,6 +65,16 @@ export function PostTagFilter({ posts, allTags }: PostTagFilterProps) {
                     backgroundColor: 'transparent',
                   }
             }
+            onMouseEnter={(e) => {
+              if (activeTag !== tag) {
+                e.currentTarget.style.backgroundColor = '#EDE8DF'
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (activeTag !== tag) {
+                e.currentTarget.style.backgroundColor = 'transparent'
+              }
+            }}
           >
             {tag}
           </button>
@@ -92,7 +112,7 @@ export function PaperTagFilter({ papers, allTags }: PaperTagFilterProps) {
       <div className="flex flex-wrap gap-2 mb-8">
         <button
           onClick={() => setActiveTag(null)}
-          className="text-xs px-3 py-1 rounded-full transition-colors"
+          className="text-xs px-3 py-1 rounded-full transition-colors cursor-pointer select-none"
           style={
             activeTag === null
               ? { backgroundColor: '#C4622D', color: '#fff', border: '1px solid #C4622D' }
@@ -102,6 +122,16 @@ export function PaperTagFilter({ papers, allTags }: PaperTagFilterProps) {
                   backgroundColor: 'transparent',
                 }
           }
+          onMouseEnter={(e) => {
+            if (activeTag !== null) {
+              e.currentTarget.style.backgroundColor = '#EDE8DF'
+            }
+          }}
+          onMouseLeave={(e) => {
+            if (activeTag !== null) {
+              e.currentTarget.style.backgroundColor = 'transparent'
+            }
+          }}
         >
           All
         </button>
@@ -109,7 +139,7 @@ export function PaperTagFilter({ papers, allTags }: PaperTagFilterProps) {
           <button
             key={tag}
             onClick={() => setActiveTag(tag === activeTag ? null : tag)}
-            className="text-xs px-3 py-1 rounded-full transition-colors"
+            className="text-xs px-3 py-1 rounded-full transition-colors cursor-pointer select-none"
             style={
               activeTag === tag
                 ? { backgroundColor: '#C4622D', color: '#fff', border: '1px solid #C4622D' }
@@ -119,6 +149,16 @@ export function PaperTagFilter({ papers, allTags }: PaperTagFilterProps) {
                     backgroundColor: 'transparent',
                   }
             }
+            onMouseEnter={(e) => {
+              if (activeTag !== tag) {
+                e.currentTarget.style.backgroundColor = '#EDE8DF'
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (activeTag !== tag) {
+                e.currentTarget.style.backgroundColor = 'transparent'
+              }
+            }}
           >
             {tag}
           </button>

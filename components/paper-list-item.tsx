@@ -1,11 +1,5 @@
 import type { Paper } from '@/types'
 
-const tagColors: Record<string, string> = {
-  systems: 'background-color:#EFF6FF;color:#1D4ED8',
-  storage: 'background-color:#F5F3FF;color:#6D28D9',
-  consensus: 'background-color:#FFF7ED;color:#92400E',
-  distributed: 'background-color:#ECFDF5;color:#065F46',
-}
 
 interface PaperListItemProps {
   paper: Paper
@@ -14,14 +8,17 @@ interface PaperListItemProps {
 
 export function PaperListItem({ paper, showNote = true }: PaperListItemProps) {
   return (
-    <div className="py-4" style={{ borderBottom: '1px solid rgba(28,28,26,0.10)' }}>
+    <div
+      className="py-4 hover:bg-card-bg transition-colors rounded-lg px-3 -mx-3"
+      style={{ borderBottom: '1px solid rgba(28,28,26,0.10)' }}
+    >
       <div className="flex justify-between items-start gap-4">
         <div className="flex-1 min-w-0">
           <a
             href={paper.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium transition-colors hover:text-[#C4622D]"
+            className="text-sm font-medium transition-colors hover:text-portfolio-accent cursor-pointer underline-offset-2 hover:underline"
             style={{ color: '#1C1C1A' }}
           >
             {paper.title}
@@ -35,25 +32,21 @@ export function PaperListItem({ paper, showNote = true }: PaperListItemProps) {
             </p>
           )}
           <div className="flex flex-wrap gap-1.5 mt-2">
-            {paper.tags.map((tag) => {
-              const colorStyle = tagColors[tag] || 'background-color:#EDE8DF;color:#9B7B4D'
-              const [bg, fg] = colorStyle.split(';')
-              return (
-                <span
-                  key={tag}
-                  className="text-xs px-2 py-0.5 rounded-full"
-                  style={{
-                    backgroundColor: bg.replace('background-color:', ''),
-                    color: fg.replace('color:', ''),
-                  }}
-                >
-                  {tag}
-                </span>
-              )
-            })}
+            {paper.tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-xs px-2 py-0.5 rounded-full border"
+                style={{
+                  borderColor: 'rgba(28,28,26,0.10)',
+                  color: '#6B6860',
+                }}
+              >
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
-        <div className="flex-shrink-0 text-xs whitespace-nowrap" style={{ color: '#9B9790' }}>
+        <div className="shrink-0 text-xs whitespace-nowrap" style={{ color: '#9B9790' }}>
           {paper.organization}, {paper.year}
         </div>
       </div>

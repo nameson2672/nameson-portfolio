@@ -22,17 +22,21 @@ export function BookItem({ book }: BookItemProps) {
       className="flex gap-4 py-4"
       style={{ borderBottom: '1px solid rgba(28,28,26,0.10)' }}
     >
-      <div
-        className="w-10 h-14 rounded flex-shrink-0"
-        style={{ backgroundColor: book.color }}
-      />
       <div className="flex-1 min-w-0">
         <div className="flex justify-between items-start gap-2">
-          <h3 className="text-sm font-medium leading-snug" style={{ color: '#1C1C1A' }}>
-            {book.title}
+          <h3 className="text-sm leading-snug">
+            <a
+              href={book.buyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-charcoal hover:text-accent transition-colors underline-offset-2 hover:underline"
+              style={{ color: '#1C1C1A' }}
+            >
+              {book.title}
+            </a>
           </h3>
           {book.status === 'finished' && book.rating !== null && (
-            <div className="flex gap-0.5 flex-shrink-0">
+            <div className="flex gap-0.5 shrink-0">
               {[1, 2, 3, 4, 5].map((star) => (
                 <span
                   key={star}

@@ -15,7 +15,7 @@ export function PostListItem({ post, showExcerpt = true }: PostListItemProps) {
   return (
     <Link
       href={`/writing/${post.slug}`}
-      className="block group py-4"
+      className="block group py-4 cursor-pointer"
       style={{ borderBottom: '1px solid rgba(28,28,26,0.10)' }}
     >
       <div className="flex justify-between items-start gap-4">
@@ -25,6 +25,7 @@ export function PostListItem({ post, showExcerpt = true }: PostListItemProps) {
             style={{ color: '#1C1C1A' }}
           >
             {post.title}
+            <span className="opacity-0 group-hover:opacity-100 transition-opacity text-portfolio-accent text-sm ml-1">→</span>
           </h3>
           {showExcerpt && (
             <p className="text-sm mt-1 leading-relaxed" style={{ color: '#6B6860' }}>
