@@ -9,11 +9,48 @@ export const metadata: Metadata = {
     default: 'Nameson Gaudel — Software Engineer',
     template: '%s | Nameson Gaudel',
   },
-  description: 'Software engineer building distributed systems and writing about the craft.',
+  description:
+    'Software engineer focused on cloud-native development on AWS, .NET Core backend systems, and full-stack TypeScript. AWS & CKA certified.',
+  keywords: [
+    'Nameson Gaudel',
+    'Software Engineer',
+    'Cloud Engineer',
+    'AWS',
+    'Kubernetes',
+    '.NET Core',
+    'TypeScript',
+    'React',
+    'DevOps',
+    'Backend Engineer',
+  ],
+  authors: [{ name: 'Nameson Gaudel' }],
+  creator: 'Nameson Gaudel',
+  metadataBase: new URL('https://namesongaudel.com'),
+  icons: {
+    icon: '/icon.jpeg',
+    apple: '/icon.jpeg',
+  },
   openGraph: {
-    title: 'Nameson Gaudel',
-    description: 'Software engineer building distributed systems and writing about the craft.',
+    title: 'Nameson Gaudel — Software Engineer',
+    description:
+      'Software engineer focused on cloud-native development on AWS, .NET Core backend systems, and full-stack TypeScript. AWS & CKA certified.',
     type: 'website',
+    locale: 'en_US',
+    images: [
+      {
+        url: '/icon.jpeg',
+        width: 800,
+        height: 800,
+        alt: 'Nameson Gaudel',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Nameson Gaudel — Software Engineer',
+    description:
+      'Software engineer focused on cloud-native development on AWS, .NET Core backend systems, and full-stack TypeScript.',
+    images: ['/icon.jpeg'],
   },
 }
 

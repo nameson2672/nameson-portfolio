@@ -10,15 +10,15 @@ export const dynamic = 'force-static'
 const projects = [
   {
     title: 'Legal Assistance AI',
-    description: 'AI-driven legal guidance tool built with FastAPI, LangChain, and LLaMA3.',
-    tags: ['Python', 'LangChain', 'FastAPI'],
+    description: 'AI-driven legal guidance tool built with FastAPI, LangChain, and LLaMA4.',
+    tags: ['Python', 'LangChain', 'FastAPI', 'LLaMA4'],
     url: null,
   },
   {
     title: 'GitOps Pipeline — Three-Tier Architecture',
     description:
       'Kubernetes GitOps pipeline using Jenkins, ArgoCD, and Docker with automated rollbacks.',
-    tags: ['Kubernetes', 'ArgoCD', 'Jenkins'],
+    tags: ['Kubernetes', 'ArgoCD', 'Jenkins', 'GitOps', 'Docker', 'Python'],
     url: null,
   },
   {
@@ -45,7 +45,7 @@ export default async function HomePage() {
           Software Engineer · Cloud · .NET · TypeScript
         </p>
         <h1 className="text-4xl font-medium leading-tight mb-6" style={{ color: '#1C1C1A' }}>
-          Hey, I&apos;m Nameson —<br />
+          Hey, I&apos;m Nameson Gaudel<br />
           I build scalable systems and ship them to the cloud.
         </h1>
         <p className="leading-relaxed" style={{ color: '#6B6860' }}>
