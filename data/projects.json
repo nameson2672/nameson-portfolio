@@ -1,0 +1,45 @@
+{
+  "projects": [
+    {
+      "id": "terraform-aws-modules",
+      "title": "Terraform AWS Infrastructure Modules",
+      "description": "Reusable Terraform modules for VPC, EKS, and RDS provisioning following AWS Well-Architected Framework guidelines.",
+      "tags": ["Terraform", "AWS", "EKS", "RDS", "IaC"],
+      "url": "https://github.com/nameson2672/eks-iac-pipeline",
+      "favorite": true
+    },
+    {
+      "id": "legal-assistance-ai",
+      "title": "Legal Assistance AI",
+      "description": "AI-driven legal guidance tool built with FastAPI, LangChain, and LLaMA4.",
+      "tags": ["Python", "LangChain", "FastAPI", "LLaMA4"],
+      "url": "https://github.com/nameson2672/law-llm",
+      "favorite": true
+    },
+    {
+      "id": "gitops-pipeline",
+      "title": "GitOps Pipeline — Three-Tier Architecture",
+      "description": "Kubernetes GitOps pipeline using Jenkins, ArgoCD, and Docker with automated rollbacks.",
+      "tags": ["Kubernetes", "ArgoCD", "Jenkins", "GitOps", "Docker", "Python"],
+      "url": null,
+      "favorite": true
+    },
+    {
+      "id": "rich-text-editor",
+      "title": "Rich Text Editor for React",
+      "description": "Mobile-friendly editor built on Draft.js with image uploads, formatting, and live previews.",
+      "tags": ["React", "TypeScript", "Draft.js"],
+      "url": null,
+      "favorite": false
+    },
+    {
+      "id": "dotnet-api-gateway",
+      "title": ".NET Core API Gateway",
+      "description": "Lightweight API gateway built with ASP.NET Core handling rate limiting, JWT auth, and request routing for microservices.",
+      "tags": [".NET", "C#", "ASP.NET Core", "JWT", "Microservices"],
+      "url": null,
+      "favorite": false
+    }
+
+  ]
+}

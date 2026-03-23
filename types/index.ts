@@ -31,3 +31,12 @@ export interface Post {
   tags: string[]
   content: string
 }
+
+export interface Project {
+  id: string
+  title: string
+  description: string
+  tags: string[]
+  url: string | null
+  favorite: boolean
+}
